@@ -14,16 +14,16 @@ Focus: Alert Investigation • Log Analysis • Timeline Analysis • Incident I
 <br>
 <br>
 <h3>Scenario</h3>
-<br>
+
 <br>
 <h3>Tools Used</h3>
-<br>
+Windows Security, Active Directory<br>
 <br>
 <h3>Investigation</h3>
-<br>
+ <br>
 <br>
 <h3>Findings</h3>
-<br>
+Analysis of the Security.log, identified multiple failed logon attempts originating from the same source 1P address 10.20.4.15.<br>
 <br>
 <h3>Indicators</h3>
 <br>
