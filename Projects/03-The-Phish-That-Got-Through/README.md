@@ -1,11 +1,11 @@
 # The Phish That Got Through
 # Status: In Progress
-#Jisr Bank confirmed an intrusion: a phishing document spawned encoded PowerShell that dropped and persisted an implant. You have the incident's process telemetry and the available fields. Design a detection that catches this behavior durably — not one tied to the specific hash or IP that the attacker will rotate.
+# Jisr Bank confirmed an intrusion: a phishing document spawned encoded PowerShell that dropped and persisted an implant. You have the incident's process telemetry and the available fields. Design a detection that catches this behavior durably — not one tied to the specific hash or IP that the attacker will rotate.
 # Focus: Phishing Analysis • Indicators of Compromise • Log Analysis • Incident Triage • Windows Security
 
 <!--<h3>Objective</h3>
 <li>Choose durable behavioral fields over volatile artifacts.</li>
-<li>Structure boolean conditions to match the behavior precisely.</li>
+<li>Structu re boolean conditions to match the behavior precisely.</li>
 <li>Map the detection to an ATT&CK technique. </li>
 <br>
 <br>
