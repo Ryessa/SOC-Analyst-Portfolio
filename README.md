@@ -27,7 +27,7 @@ My goal is to develop the technical and analytical skills required to investigat
 
 # **Featured Investigations**
 
-## **1\. The 2:17 AM Incident**
+## **[1\. The 2:17 AM Incident](Projects/01-The-2-17-AM-Incident/)**
 
 **Status:** In Progress
 
