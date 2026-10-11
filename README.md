@@ -51,13 +51,13 @@ A phishing investigation examining how a suspicious message or related activity 
 
 **Focus:** Phishing Analysis • Indicators of Compromise • Event Analysis • Incident Triage • Security Documentation
 
-## **[4\. The Midnight Login](Projects/04-The-Midnight-Login/)**
+## **[4\. The 2:17 AM Incident](Projects/01-The-2-17-AM-Incident)**
 
 **Status:** 🟡In Progress
 
 An authentication-focused investigation examining unusual login activity and the surrounding security evidence. The project focuses on determining whether an authentication event represents legitimate behavior or activity requiring further investigation.
 
-**Focus:** Authentication Analysis • Log Analysis • Anomaly Detection • Account Security • Incident Investigation
+**Focus:** Alert Investigation • Log Analysis • Timeline Analysis • Incident Investigation • Security Documentation
 
 # **Core Tools**
 
