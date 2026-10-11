@@ -27,13 +27,13 @@ My goal is to develop the technical and analytical skills required to investigat
 
 # **Featured Investigations**
 
-## **[1\. The 2:17 AM Incident](Projects/01-The-2-17-AM-Incident/)**
+## **[1\. The Midnight Login](Projects/04-The-Midnight-Login/)**
 
 **Status:** 🟡In Progress
 
-A SOC investigation designed to develop practical skills in reviewing security events, analyzing evidence, establishing a timeline, and determining what occurred during suspicious activity.
+An authentication-focused investigation examining unusual login activity and the surrounding security evidence. The project focuses on determining whether an authentication event represents legitimate behavior or activity requiring further investigation.
 
-**Focus:** Alert Investigation • Log Analysis • Timeline Analysis • Incident Investigation • Security Documentation
+**Focus:** Authentication Analysis • Log Analysis • Anomaly Detection • Account Security • Incident Investigation
 
 ## **[2\. One Account, Three Attacks](Projects/02-One-Account-Three-Attacks/)**
 
@@ -55,7 +55,7 @@ A phishing investigation examining how a suspicious message or related activity 
 
 **Status:** 🟡In Progress
 
-An authentication-focused investigation examining unusual login activity and the surrounding security evidence. The project focuses on determining whether an authentication event represents legitimate behavior or activity requiring further investigation.
+A SOC investigation designed to develop practical skills in reviewing security events, analyzing evidence, establishing a timeline, and determining what occurred during suspicious activity.
 
 **Focus:** Alert Investigation • Log Analysis • Timeline Analysis • Incident Investigation • Security Documentation
 
