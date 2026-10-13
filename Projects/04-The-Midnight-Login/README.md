@@ -8,7 +8,6 @@ Focus: Alert Investigation • Log Analysis • Timeline Analysis • Incident I
 
 
 <!--
-<h3>Objective</h3>
 # **The Midnight Login**
 
 **SOC Analyst Investigation Template**
@@ -21,25 +20,25 @@ Focus: Alert Investigation • Log Analysis • Timeline Analysis • Incident I
 
 On Saturday at, an authentication event involving Windows workstation was identified at approximately 2:40 AM. The activity occurred outside the user’s expected login period.
 
-The login originated from \[SOURCE IP / LOCATION / SRV-FIN-02 , if known\] and targeted \[SYSTEM / APPLICATION / SRV-FIN-02 \].
+The login originated from 10.20.4.15 / WS-042 and targeted SRV-FIN-02.
 
-The activity was selected for investigation because **\[briefly explain what made the login unusual — time, location, source IP, device, repeated failures, etc.\].**
+The activity was selected for investigation because **of the repeated failures, the account pivoting, the times of the login occurred.**
 
 The investigation focused on determining whether the authentication represented legitimate user activity, an authentication anomaly, or potential unauthorized account access.
 
-**Initial Assessment:** Potentially Malicious
+**Initial Assessment:** suspicious authentication
 
 # **Scenario**
 
-A security event was identified involving the account:
+At 02:40 on a Saturday at Nexa Digital. An alert fires on SRV-FIN-02, a finance file server. The rule that triggered is 'Multiple failed logons followed by success'. Nobody from the finance team is scheduled to work tonight. 
 
-**Account:** s.aldosari 
+**Account:** M. Tariq
 
 **Authentication Time:** 02:31:31 
 
 **Source IP**:10.20.4.15 
 
-**Destination:** SRV-FIN-02,  / FINANCE FILE SERVER
+**Destination:**  SRV-FIN-02 
 
 **Authentication Result:** SUCCESS
 
@@ -74,17 +73,17 @@ This investigation was conducted within a controlled cybersecurity lab environme
 
 **Analyst System:** Windows
 
-**SIEM:** \[Wazuh / Splunk / Other\]
+**Log:** SIEM
 
 **Virtualization Platform:** None
 
-**Network Configuration:** \[Host-Only / NAT / Internal Network / Other\]
+**Network Configuration:** Internal Network
 
 # **Tools Used**
 
 ## **ACTIVE DIRECTORY**
 
-**Purpose:** Used to review alerts and authentication events associated with the account.
+**Purpose:** Provides centralized authentication and authorization to network resources. 
 
 ## **SECURITY.LOG**
 
@@ -92,47 +91,41 @@ This investigation was conducted within a controlled cybersecurity lab environme
 
 ## **CMDB**
 
-**Purpose:** Used to investigate network activity associated with the authentication event, if applicable.
+Used to investigate network activity associated with the authentication event, if applicable.
 
 ## **MITRE ATT\&CK**
 
-**Purpose:** Used to research and categorize observed behavior when sufficient evidence supported a technique mapping.
+Used to research and categorize observed behavior according to established adversary tactics and techniques.
 
 # **Initial Alert**
 
-The investigation began after \[SIEM / LOG SOURCE / ALERT\] identified an authentication event involving:
+The investigation began after Security.log identified an authentication event involving:
 
 | Field | Value |
 | :---- | :---- |
-| Timestamp | \[DATE/TIME\] |
-| Username | \[USERNAME\] |
-| Source IP | \[IP ADDRESS\] |
-| Destination | \[HOST/SYSTEM\] |
-| Event ID | \[EVENT ID, if applicable\] |
-| Authentication Result | \[SUCCESS/FAILURE\] |
-| Alert Severity | \[LEVEL, if applicable\] |
+| Timestamp | 02:31:31 |
+| Username | S. Aldosari |
+| Source IP | 10.20.4.15  |
+| Destination | SRV-FIN-02  |
 
 ## **Why the Alert Required Investigation**
 
-\[Explain why this event was significant.\]
+This event was significant because of the unusual timestamp. The activity occurred outside of normal hours.
 
-At this stage, the event was treated as \[an anomaly / suspicious authentication / event requiring validation\] rather than confirmed malicious activity.
+At this stage, the event was treated as suspicious authentication rather than confirmed malicious activity. Additional authentication events were examined.
 
 # **Evidence Collected**
 
-The following evidence was reviewed during the investigation:
+The following evidence was reviewed:
 
-* ☐ SIEM alerts  
-* ☐ Successful login events  
-* ☐ Failed login events  
-* ☐ Source IP addresses  
-* ☐ Destination systems  
-* ☐ User/account activity  
-* ☐ Network traffic  
-* ☐ Endpoint events  
-* ☐ Other: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Windows authentication events  
+* Account name associated with events  
+* Authentication timestamps  
+* Source IP address  
+* Failed and successful login activity  
+* Hostname associated with assigned workstation
 
-Relevant screenshots and artifacts were preserved throughout the investigation.
+Relevant screenshots were preserved throughout the investigation.
 
 # **Investigation**
 
@@ -142,65 +135,63 @@ The initial authentication event was reviewed to establish the basic facts of th
 
 **Observed**
 
-Timestamp: \[TIME\]
+Timestamp: 02:31:31
 
-Account: \[USERNAME\]
+Account: M. Tariq
 
-Source: \[SOURCE IP/HOST\]
+Source: 10.20.4.15 
 
-Destination: \[DESTINATION\]
+Destination: SRV-FIN-02 
 
-Result: \[SUCCESS/FAILURE\]
+Result: SUCCESS
 
 **Analysis**
 
-\[Explain what this information tells you.\]
+At 2:31:31 on Saturday morning, the SRV-FIN-02 finance file server was triggered by the ‘Multiple failed logons followed by success’ alert. This alert went off during outside normal hours and no one from the Finance team is scheduled to work that night. 
 
 **Significance**
 
-\[Explain why the event is or is not significant.\]
+This significant event is evidence that someone was not seated at WS-042. 
 
 ## **Step 2 — Establish the Account's Authentication History**
 
-Authentication events involving \[USERNAME\] were reviewed for the period:
+Authentication events involving **M. Tariq** were reviewed for the period:
 
-Start: \[TIME\]
+Start: 02:31:26
 
-End: \[TIME\]
+End: 02:31:31
 
-The purpose was to determine whether the midnight login was an isolated event or part of a larger sequence.
+There were no previous authentication events involving M. Tariq, however, there were several previous events involving other user accounts on the Finance team. Several failed authentication attempts were identified with hostnames S. Aldosari and A. Kamal. 
 
 **Findings**
 
-\[Document what you actually found.\]
+The credentials of S. Aldosari was used to log into WS-042. Several unsuccessful attempts were made on Aldosari's account to access SRV-FIN-02 . Afterwards, the credentials of A. Kamal was used in the same process but was unsuccessful. This led to the use of M. Tariq’s credentials to login and successfully access the system. 
+
+The successful authentication originated from the same source IP address.
 
 ## **Step 3 — Investigate Failed Authentication Attempts**
 
-Search for authentication failures preceding the successful login.
+![][image1]
 
-| Time | Account | Source IP | Destination | Result |
-| :---- | :---- | :---- | :---- | :---- |
-| \[TIME\] | \[USER\] | \[IP\] | \[HOST\] | Failed |
-| \[TIME\] | \[USER\] | \[IP\] | \[HOST\] | Failed |
-| \[TIME\] | \[USER\] | \[IP\] | \[HOST\] | Successful |
+Figure 1a.png
 
-**Analysis:** \[Explain whether a meaningful pattern exists.\]
+**Analysis:** 
 
-Do not assume that failed logins automatically indicate an attack. Consider alternative explanations such as mistyped passwords, expired credentials, automated services, or legitimate administrative activity.
+The credentials of S. Aldosari were obtained and used to log into SRV-FIN-02 on the WS-042 workstation. This workstation is assigned to A. Kamal. After several failed attempts, A. Kamal’s credentials were used. A Logon type 3 was recorded with each event which indicates that the network session did not come from someone sitting at the console, but remotely.
+
+This pattern is evident that existing account credentials were obtained and used to log into the workstation.
 
 ## **Step 4 — Investigate the Source**
 
-**Source IP:** \[IP ADDRESS\]
+**Source IP:** 10.20.4.15 
 
-**Hostname:** \[IF KNOWN\]
+**Hostname:** WS-042 
 
-**Network:** \[INTERNAL / EXTERNAL\]
+**Network:** INTERNAL
 
-**Previously Observed:** \[YES / NO / UNKNOWN\]
+**Previously Observed:** NO
 
-**Analysis:** \[Explain what you learned about the source.\]
-
-Avoid writing that an IP address was malicious unless you have evidence supporting that conclusion. Instead, describe the observed activity associated with the source.
+**Analysis:** The source IP address **10.20.4.15** is associated with **WS-042**. This workstation is assigned to A. Kamal, an Analyst in the Finance Department. The normal business hours of that department are from 08:00 \- 17:00 (9:00 AM \- 5:00 PM).The event occurred outside of normal hours after 2:00 AM. There were five failed attempts under S. Aldosari’s account with the same source IP address of **10.20.4.15**.
 
 ## **Step 5 — Compare Related Authentication Events**
 
@@ -208,103 +199,77 @@ Events involving the same username, source IP, destination, and authentication m
 
 Correlation:
 
-\[EVENT\]  
+S. Aldosari’s Account / 10.20.4.15  
    ↓  
-\[EVENT\]  
+A. Kamal’s Account / 10.20.4.15  
    ↓  
-\[EVENT\]  
+M. Tariq’s Account / 10.20.4.15  
    ↓  
 \[AUTHENTICATION\]
 
-**Analyst Observation:** \[Explain why the relationship between these events matters.\]
+**Analyst Observation:** The source IP address **10.20.4.15** was compared to related authentication events. The investigation found that the source IP address appeared repeatedly during both the failed and successful authentication activity. 
 
-## **Step 6 — Investigate Post-Login Activity**
+The relationship between these events matters because it displays pivoting, persistence, and escalation between several accounts.
+
+## **Step 6 — Investigate Post-Authentication Activity**
 
 Events occurring after the authentication were reviewed to determine what happened after access was obtained.
 
-* Processes launched  
-* Commands executed  
-* PowerShell activity  
-* Network connections  
-* File access  
-* Account changes  
-* Privilege changes  
-* Additional authentication  
-* Security configuration changes
+* Privilege changes
 
-**Findings:** \[Document only what you actually observed.\]
+**Findings:** A post-authentication activity relieves that “special privileges assigned” for M. Tariq.
 
 **Analysis:** \[Explain whether the post-login behavior appears expected, unusual, or suspicious.\]
 
 # **Event Timeline**
 
-Build the timeline only from evidence you actually collected.
+![][image2]  
+Figure 1.png
 
-| Time | Event | Source | Significance |
-| :---- | :---- | :---- | :---- |
-| \[TIME\] | \[EVENT\] | \[LOG SOURCE\] | \[WHY IT MATTERS\] |
-| \[TIME\] | \[EVENT\] | \[LOG SOURCE\] | \[WHY IT MATTERS\] |
-| \[TIME\] | \[EVENT\] | \[LOG SOURCE\] | \[WHY IT MATTERS\] |
-| \[TIME\] | \[EVENT\] | \[LOG SOURCE\] | \[WHY IT MATTERS\] |
-
-# **Investigation Indicators**
+**Investigation Indicators**
 
 Document relevant artifacts discovered during the investigation.
 
 | Type | Indicator | Context |
 | :---- | :---- | :---- |
-| Username | \[USERNAME\] | \[CONTEXT\] |
-| Source IP | \[IP ADDRESS\] | \[CONTEXT\] |
-| Destination | \[HOST\] | \[CONTEXT\] |
-| Event ID | \[EVENT ID\] | \[CONTEXT\] |
-| Process | \[PROCESS\] | \[CONTEXT\] |
-
-Not every artifact is necessarily an Indicator of Compromise. Only classify something as an IOC when the evidence supports doing so.
+| Username | S. Aldosari | Username Is not associated with Source IP |
+| Source IP | 10.20.4.15 | Source associated with failed and successful logins |
+| Destination | SRV-FIN-02  | Designation associated with successful login |
 
 # **MITRE ATT\&CK Mapping**
 
-Only add techniques supported by your investigation.
-
-| Tactic | Technique | ID | Evidence |
-| :---- | :---- | :---- | :---- |
-| Privilege Escalation | Valid Accounts | T1078  | \[OBSERVED EVIDENCE\] |
+The observed behavior was reviewed against the MITRE ATT\&CK framework.
 
 **Mapping Explanation:** \[Explain why the observed behavior maps to the selected technique.\]
 
-Do not add MITRE techniques simply to make the project appear more advanced.
+A potential mapping for the repeated login attempts is:
+
+Tactic:Privilege Escalation  
+Technique: Valid Accounts  
+Technique ID: T1078 
 
 # **Findings**
 
 The investigation identified the following:
 
-1. \[Finding \#1\]  
-2. \[Finding \#2\]  
-3. \[Finding \#3\]  
-4. \[Finding \#4\]
+1. The attempts originated from the same source IP address **10.20.4.15**  
+2. Multiple failed authentication attempts from several user accounts  
+3. All events occurred outside of normal business hours  
+4. An event occurred after successful authentication that requires review
 
-**Key Correlation:** \[Explain the strongest correlation between your evidence.\]
+**Key Correlation:** When several failed attempts are made using the existing credentials of one account, the unauthorized user pivots to another account to gain higher-level permissions.
 
-# **Analyst Assessment**
-
-**Classification:** \[Benign / Expected Activity / Suspicious / Potential Account Compromise / Confirmed Unauthorized Access / Inconclusive\]
-
-**Confidence:** \[Low / Moderate / High\]
-
-**Reasoning:** \[Explain why the evidence supports your classification.\]
-
-**Observed fact:** \[What the logs/evidence directly show.\]
-
-**Analyst assessment:** \[What you believe those facts indicate.\]
+**Observed fact:** Security.log
 
 # **Analyst Conclusion**
 
-Based on the available evidence, \[summarize what most likely occurred\].
+Based on the available evidence, the authentication activity was assessed as Suspicious & Potential Account Compromise.
 
-The investigation established that \[summarize the strongest evidence\].
+The strongest evidence was the correlation between repeated authentication failures and a successful login involving the same source IP address.
 
-\[Explain whether the evidence was sufficient to classify the event as legitimate, suspicious, or malicious.\]
+The evidence is sufficient to classify the event as suspicious because several existing account credentials were used: S. Aldosari, A. Kamal, and M. Tariq. Whenever one user account fails to obtain access to SRV-FIN-02, login credentials are used from another account\[Explain whether the evidence was sufficient to classify the event as legitimate, suspicious, or malicious.\]
 
-If this event occurred in a production environment, \[describe appropriate escalation, containment, validation, or additional investigation\].
+If this event occurred in a production environment, the investigation must contain remediation by reviewing endpoint activity, review additional authentication sources,describe appropriate escalation, containment, validation, or additional investigation\].
 
 Because this investigation was conducted in a controlled lab environment, the activity was generated for cybersecurity training and analysis.
 
@@ -313,15 +278,12 @@ Because this investigation was conducted in a controlled lab environment, the ac
 If comparable activity occurred in a production environment, recommended actions could include:
 
 * Validate activity with the account owner.  
-* Reset credentials if compromise is suspected.  
+* Reset credentials  
 * Revoke suspicious sessions.  
-* Review multifactor authentication.  
-* Investigate the source IP.  
+* Investigate the source IP address.  
 * Review endpoint activity.  
 * Examine other accounts for similar behavior.  
 * Escalate confirmed suspicious activity according to incident-response procedures.
-
-Only include recommendations relevant to your actual findings.
 
 # **Lessons Learned**
 
@@ -340,33 +302,27 @@ If I repeated this investigation, I would: \[Explain what you would improve or i
 
 # **Screenshots and Evidence**
 
-## **Figure 1 — Initial Alert**
+## **Figure 1 — Authentication Activity**
 
-**Insert:** \[SCREENSHOT\]
+![][image3]
 
-**Description:** \[Explain what the screenshot shows.\]
+**Description:** Security.log of SRV-FIN-02 
 
-**Why It Matters:** \[Explain why this evidence is relevant to the investigation.\]
+**Why It Matters:** Provides authentication activity of SRV-FIN-02 prior to the security alert
 
-## **Figure 2 — Authentication Activity**
+## 
 
-**Insert:** \[SCREENSHOT\] 
+## **Figure 2 — Active Directory** 
 
-**Description:** \[Explain what the screenshot shows.\]
-
-**Why It Matters:** \[Explain why this evidence is relevant to the investigation.\]
-
-## **Figure 3 — Event Correlation**
-
-**Insert:** \[SCREENSHOT\]
+![][image4]
 
 **Description:** \[Explain what the screenshot shows.\]
 
 **Why It Matters:** \[Explain why this evidence is relevant to the investigation.\]
 
-## **Figure 4 — Post-Authentication Activity**
+## **Figure 3 — Dataset**
 
-**Insert:** \[SCREENSHOT\]
+![][image5]
 
 **Description:** \[Explain what the screenshot shows.\]
 
@@ -376,22 +332,20 @@ If I repeated this investigation, I would: \[Explain what you would improve or i
 
 **Incident:** The Midnight Login
 
-**Date:** \[DATE\]
+**Date:** Saturday, 02:31:31
 
-**Account:** \[USERNAME\]
+**Affected Account(s):** S. Aldosar, A. Kamal, and M. Tariq
 
-**Source:** \[SOURCE IP/HOST\]
+**Source:** 10.20.4.15 / WS-042 
 
-**Destination:** \[TARGET\]
+**Destination:** SRV-FIN-02 
 
-**Classification:** \[CLASSIFICATION\]
+**Classification:** Suspicious Authentication Activity
 
-**Severity:** \[LOW / MEDIUM / HIGH / CRITICAL\]
+**Severity:** HIGH
 
-**Confidence:** \[LOW / MODERATE / HIGH\]
+**MITRE ATT\&CK:** Valid Accounts / T1078 
 
-**MITRE ATT\&CK:** \[TECHNIQUE — ID, if applicable\]
+**Environment:** Controlled Cybersecurity Lab \- LearnDefend
 
-**Environment:** Controlled Cybersecurity Lab
-
-**Investigation Status:** \[OPEN / CLOSED / ESCALATED\] -->
+**Investigation Status:** CLOSED
