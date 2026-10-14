@@ -167,6 +167,7 @@ Authentication activity originating from WS-042 involved three Finance accounts.
 
 The successful authentication for M. Tariq originated from the same source IP address as the preceding failed attempts involving all three accounts.
 
+<br>
 ## **Step 3 — Investigate the Multi-Account Authentication Sequence**
 
 **Figure 1 \- Multi-Account Authentication Sequence**
@@ -187,6 +188,7 @@ Five failed authentication attempts involving S. Aldosari were followed by two f
 
 **Previously Observed:** NO
 
+<br>
 **Figure 2 \- Source Asset Identification**  
 ![Source Asset Identification](Screenshots/02-Source-Asset-Identification.png)  
 **Description:** Asset inventory identifying 10.20.4.15 as WS-042 and listing A. Kamal as the workstation owner.
