@@ -1,5 +1,7 @@
 # **SOC Analyst Portfolio**
 
+**GitHub README**
+
 # **About Me**
 
 Hello\! I am an Information Systems professional transitioning into cybersecurity with a focus on Security Operations Center (SOC) analysis, threat detection, network security, and incident investigation.
@@ -67,7 +69,7 @@ A SOC investigation designed to develop practical skills in reviewing security e
 | Web Security | Burp Suite |
 | Security Testing | Metasploit |
 | Threat Detection | YARA |
-| Password Security Labs | John the Ripper |
+| UIPassword Security Labs | John the Ripper |
 | Operating Systems | Windows, Kali Linux, Ubuntu Linux |
 | Virtualization | VirtualBox |
 | Collaboration / Enterprise Tools | ServiceNow, Jira, Confluence, Microsoft 365 |
@@ -84,18 +86,23 @@ Current study areas include networking, Windows security, Linux fundamentals, SI
 
 # **Portfolio Structure**
 
-cybersecurity-portfolio/  
+SOC-Analyst-Portfolio/  
 │  
 ├── README.md  
 │  
-├── Projects/  
-    ├── [01-The-Midnight-Login/](Projects/04-The-Midnight-Login/Reports.md)<br>
-    ├── 02-One-Account-Three-Attacks/  
-    ├── 03-The-Phish-That-Got-Through/  
-    └── 04-The-2-17-AM-Incident/  
-│  
-└── Templates/  
-    └── project-template.md
+└── Projects/  
+    │  
+    ├── [01-The-Midnight-Login/](Projects/04-The-Midnight-Login/Reports.md)  
+    │   └── README.md  
+    │  
+    ├── 02-The-2-17-AM-Incident/  
+    │   └── README.md  
+    │  
+    ├── 03-One-Account-Three-Attacks/  
+    │   └── README.md  
+    │  
+    └── 04-The-Phish-That-Got-Through/  
+        └── README.md
 
 Each completed investigation will include documentation describing the objective, scenario, evidence, investigative methodology, analysis, findings, incident timeline, and lessons learned.
 
