@@ -21,8 +21,7 @@ The investigation focused on determining whether the multi-account authenticatio
 **Initial Assessment: Suspicious Multi-Account Authentication**
 
 
-
-# **Scenario**
+**Scenario**
 
 
 At 02:40, an alert was generated for authentication activity that began at Nexa Digital at 02:31:11. The rule triggered on finance file server SRV-FIN-02 was ‘Multiple failed logons followed by success’. No Finance team members were scheduled to work at that time.
@@ -79,6 +78,9 @@ This investigation was conducted within a controlled cybersecurity lab environme
 
 **Network Configuration:** Internal Network<br>
 <br>
+
+
+
 
 # **Tools Used**
 
