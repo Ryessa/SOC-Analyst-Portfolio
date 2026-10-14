@@ -6,13 +6,6 @@ A SOC investigation designed to develop practical skills in reviewing security e
 Focus: Alert Investigation • Log Analysis • Timeline Analysis • Incident Investigation • Security Documentation
 
 
-
-# **The Midnight Login**
-
-**SOC Analyst Investigation Report**
-
-# **Status**
-
 🟢 Completed
 
 # **Executive Summary**
