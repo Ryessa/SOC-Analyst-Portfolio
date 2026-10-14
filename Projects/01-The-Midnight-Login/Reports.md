@@ -168,7 +168,7 @@ The successful authentication for M. Tariq originated from the same source IP ad
 
 **Figure 1 \- Multi-Account Authentication Sequence**
 
-![][image1]
+![Figure 1 - Authentication Sequence](/Screenshots/Figure%1.png)
 
 **Analysis:** 
 
