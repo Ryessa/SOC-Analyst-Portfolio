@@ -1,7 +1,5 @@
 # **SOC Analyst Portfolio**
 
-**GitHub README**
-
 # **About Me**
 
 Hello\! I am an Information Systems professional transitioning into cybersecurity with a focus on Security Operations Center (SOC) analysis, threat detection, network security, and incident investigation.
