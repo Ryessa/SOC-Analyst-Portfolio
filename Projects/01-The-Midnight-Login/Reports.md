@@ -20,6 +20,7 @@ The investigation focused on determining whether the multi-account authenticatio
 
 **Initial Assessment: Suspicious Multi-Account Authentication**
 
+<br>
 # **Scenario**
 
 At 02:40, an alert was generated for authentication activity that began at Nexa Digital at 02:31:11. The rule triggered on finance file server SRV-FIN-02 was ‘Multiple failed logons followed by success’. No Finance team members were scheduled to work at that time.
@@ -187,7 +188,7 @@ Five failed authentication attempts involving S. Aldosari were followed by two f
 **Previously Observed:** NO
 
 **Figure 2 \- Source Asset Identification**  
-![][image2]  
+![Source Asset Identification](Screenshots/02-Source-Asset-Identification.png)  
 **Description:** Asset inventory identifying 10.20.4.15 as WS-042 and listing A. Kamal as the workstation owner.
 
 **Why It Matters:** The asset data maps 10.20.4.15 to WS-042 and identifies A. Kamal as the workstation owner. This allows the source workstation to be compared with all three accounts used in the authentication sequence.
@@ -233,7 +234,7 @@ Events occurring after the authentication were reviewed to determine what happen
 
 **Figure 5 \- Authentication Event Timeline**
 
-![Authentication Event Timeline][image5]  
+![Authentication Event Timeline](Screenshots/05-Authentication-Event-Timeline.png)  
 **Why it matters:** Shows the chronological sequence
 
 **Investigation Indicators**
