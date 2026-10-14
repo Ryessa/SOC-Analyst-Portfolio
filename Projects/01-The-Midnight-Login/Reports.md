@@ -151,7 +151,7 @@ At 02:31:11 on Saturday morning, Security.log recorded a failed Logon Type 3 aut
 The initial failed authentication was recorded as Logon Type 3, indicating network authentication to SRV-FIN-02 rather than an interactive local logon to the server. Its significance increased when the same source IP was observed attempting authentication with two additional Finance accounts.
 
 <br>
-## **Step 2 — Establish the Multi-Account Authentication History**
+## **<h2>Step 2 — Establish the Multi-Account Authentication History</h2>**
 
 Authentication events involving S. Aldosari, A. Kamal, and M. Tariq were reviewed for the period:
 
@@ -168,7 +168,7 @@ Authentication activity originating from WS-042 involved three Finance accounts.
 The successful authentication for M. Tariq originated from the same source IP address as the preceding failed attempts involving all three accounts.
 
 <br>
-## **Step 3 — Investigate the Multi-Account Authentication Sequence**
+## **<h2>Step 3 — Investigate the Multi-Account Authentication Sequence</h2>**
 
 **Figure 1 \- Multi-Account Authentication Sequence**
 
@@ -190,7 +190,7 @@ Five failed authentication attempts involving S. Aldosari were followed by two f
 
 <br>
 **Figure 2 \- Source Asset Identification**  
-<br>
+
 ![Source Asset Identification](Screenshots/02-Source-Asset-Identification.png)
 
 **Description:** Asset inventory identifying 10.20.4.15 as WS-042 and listing A. Kamal as the workstation owner.
@@ -227,7 +227,7 @@ Events occurring after the authentication were reviewed to determine what happen
 * Privilege changes  
 * Credential use / attempted authentication
 
-**Figure 4 \- Post- Authentication Privilege Event**
+**Figure 4 \- Post-Authentication Privilege Event**
 
 ![Post-Authentication Privilege Event](Screenshots/04-Post-Authentication-Privilege-Event.png)
 
