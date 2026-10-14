@@ -91,13 +91,7 @@ cybersecurity-portfolio/
 ├── README.md  
 │  
 ├── Projects/  
-│   ├── 01-The-Midnight-Login/
-        ├──Screenshots
-            ├── 01-Authentication-Sequence.png<br>
-            ├── 02-Source-Asset-Identification.png
-            ├── 03-Account-Workstation-Correlation.png
-            ├──04-Post-Authentication-Privilege-Event.png
-            ├──05-Authentication-Event-Timeline.png  
+│   ├── 01-The-Midnight-Login/ 
 │   ├── 02-One-Account-Three-Attacks/  
 │   ├── 03-The-Phish-That-Got-Through/  
 │   └── 04-The-2-17-AM-Incident/  
