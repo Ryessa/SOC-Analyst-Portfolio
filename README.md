@@ -93,7 +93,7 @@ cybersecurity-portfolio/
 ├── Projects/  
 │   ├── 01-The-Midnight-Login/
         ├──Screenshots
-            ├── 01-Authentication-Sequence.png
+            ├── 01-Authentication-Sequence.png<br>
             ├── 02-Source-Asset-Identification.png
             ├── 03-Account-Workstation-Correlation.png
             ├──04-Post-Authentication-Privilege-Event.png
