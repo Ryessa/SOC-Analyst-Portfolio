@@ -59,7 +59,7 @@ The objective of this investigation is to determine:
 * Whether the available evidence indicates potential account compromise.
 
 
-# **Lab Environment**
+# <br>**Lab Environment**
 
 This investigation was conducted within a controlled cybersecurity lab environment.
 
