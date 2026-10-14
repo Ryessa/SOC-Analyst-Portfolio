@@ -26,7 +26,7 @@ My goal is to develop the technical and analytical skills required to investigat
 
 # **Featured Investigations**
 
-## [**1\. The Midnight Login**](Projects/04-The-Midnight-Login/Reports.md)
+## [**1\. The Midnight Login**](Projects/01-The-Midnight-Login/Reports.md)
 
 **Status:** Completed
 
