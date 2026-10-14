@@ -47,7 +47,7 @@ The multi-account authentication sequence required further investigation because
 
 
 
-# **Investigation Objective**
+# <br>**Investigation Objective**<br>
 
 The objective of this investigation is to determine:
 
