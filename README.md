@@ -25,9 +25,9 @@ My goal is to develop the technical and analytical skills required to investigat
 
 # **Featured Investigations**
 
-## **1\. The Midnight Login**
+## [**1\. The Midnight Login**](Projects/04-The-Midnight-Login/Reports.md)
 
-**Status:** In Progress
+**Status:** Completed
 
 An authentication-focused investigation examining unusual login activity and the surrounding security evidence. The project focuses on determining whether an authentication event represents legitimate behavior or activity requiring further investigation.
 
@@ -89,7 +89,7 @@ cybersecurity-portfolio/
 ├── README.md  
 │  
 ├── Projects/  
-    ├── 01-The-Midnight-Login/ <br>
+    ├── [01-The-Midnight-Login/](Projects/04-The-Midnight-Login/Reports.md)<br>
     ├── 02-One-Account-Three-Attacks/  
     ├── 03-The-Phish-That-Got-Through/  
     └── 04-The-2-17-AM-Incident/  
