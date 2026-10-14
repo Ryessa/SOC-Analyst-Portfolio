@@ -46,6 +46,8 @@ The multi-account authentication sequence required further investigation because
 * The Logon Type 3 events represented network authentication to SRV-FIN-02 rather than interactive local logons to the server.  
 * Activity following authentication appeared inconsistent with expected user behavior.
 
+
+
 # **Investigation Objective**
 
 The objective of this investigation is to determine:
@@ -57,9 +59,11 @@ The objective of this investigation is to determine:
 * Whether additional suspicious activity occurred after authentication.  
 * Whether the available evidence indicates potential account compromise.
 
+
 # **Lab Environment**
 
 This investigation was conducted within a controlled cybersecurity lab environment.
+
 
 ## **Systems**
 
@@ -75,6 +79,7 @@ This investigation was conducted within a controlled cybersecurity lab environme
 
 **Network Configuration:** Internal Network<br>
 <br>
+
 # **Tools Used**
 
 ## **ACTIVE DIRECTORY**
@@ -93,6 +98,7 @@ Used to track, record, and maintain physical and digital assets.<br>
 
 Used to research and categorize observed behavior according to established adversary tactics and techniques.<br><br>
 
+
 # **Initial Alert**
 
 The investigation began after Security.log identified a sequence of authentication events involving multiple Finance accounts:
@@ -107,11 +113,13 @@ The investigation began after Security.log identified a sequence of authenticati
 | Successful Authentication | M. Tariq — 02:31:31 |
 | Alert Time | 02:40 |
 
+
 ## **Why the Alert Required Investigation**
 
 This event sequence was significant because it occurred outside normal business hours and involved repeated authentication attempts across multiple user accounts from the same source IP address.
 
 At this stage, the activity was treated as suspicious multi-account authentication rather than confirmed malicious activity. Additional events were examined to establish the full sequence.
+
 
 # **Evidence Collected**
 
@@ -125,6 +133,7 @@ The following evidence was reviewed:
 * Hostname associated with assigned workstation
 
 Relevant screenshots were preserved throughout the investigation.
+
 
 # **Investigation**
 
@@ -153,7 +162,7 @@ At 02:31:11 on Saturday morning, Security.log recorded a failed Logon Type 3 aut
 The initial failed authentication was recorded as Logon Type 3, indicating network authentication to SRV-FIN-02 rather than an interactive local logon to the server. Its significance increased when the same source IP was observed attempting authentication with two additional Finance accounts.
 
 <br>
-<h2>**Step 2 — Establish the Multi-Account Authentication History**</h2>
+<h2>Step 2 — Establish the Multi-Account Authentication History</h2>
 
 Authentication events involving S. Aldosari, A. Kamal, and M. Tariq were reviewed for the period:
 
@@ -162,6 +171,7 @@ Start: 02:31:11
 End: 02:31:31
 
 The review identified a continuous sequence of authentication attempts involving three Finance accounts from the same source IP address. The activity began with S. Aldosari, continued with A. Kamal, and then moved to M. Tariq.
+
 
 **Findings**
 
@@ -179,6 +189,7 @@ The successful authentication for M. Tariq originated from the same source IP ad
 **Analysis:** 
 
 Five failed authentication attempts involving S. Aldosari were followed by two failed attempts involving A. Kamal and two failed attempts involving M. Tariq. M. Tariq then successfully authenticated at 02:31:31. All events originated from 10.20.4.15 and were recorded as Logon Type 3\. The progression across three accounts from the same source is more significant than an isolated failed login and suggests systematic credential use.01-Authentication-Sequence.png
+
 
 ## **Step 4 — Investigate the Source**
 
@@ -201,6 +212,7 @@ Five failed authentication attempts involving S. Aldosari were followed by two f
 
 **Analysis:** The source IP address 10.20.4.15 is associated with WS-042, which is assigned to A. Kamal, an Analyst in the Finance Department. However, authentication attempts from this workstation involved S. Aldosari, A. Kamal, and M. Tariq. The Finance department’s normal business hours are 08:00 to 17:00 (8:00 AM \- 5:00 PM), while the activity occurred shortly after 2:00 AM. The use of three accounts from one workstation outside normal hours increased the significance of the activity.
 
+
 ## **Step 5 — Compare Related Authentication Events**
 
 Events involving the three Finance accounts were compared by source IP, destination, timestamp, and authentication result.
@@ -215,6 +227,7 @@ M. Tariq’s Account / 10.20.4.15
    ↓  
 Success
 
+
 **Figure 3 \- Account and Workstation Correlation**
 ![Account and Workstation Correlation](Screenshots/03-Account-and-Workstation-Correlation.png)
 
@@ -222,12 +235,14 @@ Success
 
 The relationship between these events is significant because the activity progressed across three separate Finance accounts from the same source workstation and culminated in a successful authentication for M. Tariq.
 
+
 ## **Step 6 — Investigate Post-Authentication Activity**
 
 Events occurring after the authentication were reviewed to determine what happened after access was granted.
 
 * Privilege changes  
 * Credential use / attempted authentication
+
 
 **Figure 4 \- Post-Authentication Privilege Event**
 
@@ -237,12 +252,14 @@ Events occurring after the authentication were reviewed to determine what happen
 
 **Analysis:** The event increases the significance of the successful login and warrants additional investigation into the privileges associated with the account and subsequent activity. The event alone is not sufficient to conclude that privilege escalation occurred.
 
+
 # **Event Timeline**
 
 **Figure 5 \- Authentication Event Timeline**
 
 ![Authentication Event Timeline](Screenshots/05-Authentication-Event-Timeline.png)  
 **Why it matters:** Shows the chronological sequence
+
 
 **Investigation Indicators**
 
@@ -255,6 +272,7 @@ Document relevant artifacts discovered during the investigation.
 | Source IP | 10.20.4.15 | Single source of failed attempts across three accounts and the successful authentication for M. Tariq |
 | Destination | SRV-FIN-02  | Finance server targeted by the authentication activity |
 
+
 # **MITRE ATT\&CK Mapping**
 
 The observed behavior was reviewed against the MITRE ATT\&CK framework.
@@ -266,6 +284,7 @@ A potential mapping for the repeated login attempts is:
 **Technique:** Valid Accounts  
 **Technique ID:** T1078   
 **Observed behavior:** Multiple existing Finance accounts were used in authentication attempts from the same source workstation, culminating in a successful authentication for M. Tariq.
+
 
 # **Findings** The investigation identified the following:
 
@@ -290,6 +309,7 @@ Taken together, the after-hours timing, repeated authentication failures, progre
 
 In a production environment, recommended next steps would include validating the activity with the affected users, isolating or investigating WS-042, resetting affected credentials where appropriate, revoking active sessions, and reviewing additional endpoint and authentication telemetry.
 
+
 # **Remediation Recommendations**
 
 If comparable activity occurred in a production environment, recommended actions could include:
@@ -301,9 +321,11 @@ If comparable activity occurred in a production environment, recommended actions
 * Isolate and investigate WS-042  
 * Review additional endpoint and authentication telemetry
 
+
 # **Lessons Learned**
 
 This investigation strengthened my understanding of Windows authentication events, multi-account event correlation, account-to-asset relationships, and evidence-based incident classification. The most important lesson was that a single failed login provides limited context: correlating multiple usernames, timestamps, source systems, logon types, and subsequent events can reveal a broader authentication pattern that would be missed if each account were reviewed in isolation.
+
 
 # **Final Assessment**
 
