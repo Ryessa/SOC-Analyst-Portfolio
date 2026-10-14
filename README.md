@@ -29,7 +29,7 @@ My goal is to develop the technical and analytical skills required to investigat
 
 ## **[1\. The Midnight Login](Projects/04-The-Midnight-Login/)**
 
-**Status:** 🟡In Progress
+**Status:** 🟢 Completed
 
 An authentication-focused investigation examining unusual login activity and the surrounding security evidence. The project focuses on determining whether an authentication event represents legitimate behavior or activity requiring further investigation.
 
