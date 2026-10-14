@@ -74,9 +74,8 @@ This investigation was conducted within a controlled cybersecurity lab environme
 **Virtualization Platform:** None
 
 **Network Configuration:** Internal Network<br>
-
-# **Tools Used**
 <br>
+# **Tools Used**
 
 ## **ACTIVE DIRECTORY**
 
@@ -154,7 +153,7 @@ At 02:31:11 on Saturday morning, Security.log recorded a failed Logon Type 3 aut
 The initial failed authentication was recorded as Logon Type 3, indicating network authentication to SRV-FIN-02 rather than an interactive local logon to the server. Its significance increased when the same source IP was observed attempting authentication with two additional Finance accounts.
 
 <br>
-## **<h2>Step 2 — Establish the Multi-Account Authentication History</h2>**
+<h2>**Step 2 — Establish the Multi-Account Authentication History**</h2>
 
 Authentication events involving S. Aldosari, A. Kamal, and M. Tariq were reviewed for the period:
 
