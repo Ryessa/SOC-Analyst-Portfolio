@@ -1,6 +1,5 @@
 # **SOC Analyst Portfolio**
 
-**GitHub README**
 
 # **About Me**
 
