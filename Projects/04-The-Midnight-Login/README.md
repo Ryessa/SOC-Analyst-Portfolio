@@ -1,12 +1,12 @@
 <h1>The Midnight Login</h1>
-Status: In Progress<br>
+🟢 Completed<br>
 <br>
 A SOC investigation designed to develop practical skills in reviewing security events, analyzing evidence, establishing a timeline, and determining what occurred during suspicious activity.<br>
 <br>
 Focus: Alert Investigation • Log Analysis • Timeline Analysis • Incident Investigation • Security Documentation
 
 
-🟢 Completed
+
 
 # **Executive Summary**
 
