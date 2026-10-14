@@ -190,7 +190,8 @@ Five failed authentication attempts involving S. Aldosari were followed by two f
 
 <br>
 **Figure 2 \- Source Asset Identification**  
-![Source Asset Identification](Screenshots/02-Source-Asset-Identification.png)  
+![Source Asset Identification](Screenshots/02-Source-Asset-Identification.png)
+
 **Description:** Asset inventory identifying 10.20.4.15 as WS-042 and listing A. Kamal as the workstation owner.
 
 **Why It Matters:** The asset data maps 10.20.4.15 to WS-042 and identifies A. Kamal as the workstation owner. This allows the source workstation to be compared with all three accounts used in the authentication sequence.
@@ -211,7 +212,7 @@ M. Tariq’s Account / 10.20.4.15
    ↓  
 Success
 
-**Figure 3 \- Account and Workstation Correlation**![][image3]
+**Figure 3 \- Account and Workstation Correlation**![Account and Workstation Correlation](Screenshots/03-Account-and-Workstation-Correlation.png)
 
 **Analyst Observation:** The same source IP address, 10.20.4.15, appeared throughout the failed and successful authentication activity. Figure 2 maps that source to WS-042, A. Kamal’s assigned workstation, while Figure 3 shows that S. Aldosari and M. Tariq are assigned to different workstations. This establishes a cross-account pattern from a single source workstation.
 
@@ -226,7 +227,7 @@ Events occurring after the authentication were reviewed to determine what happen
 
 **Figure 4 \- Post- Authentication Privilege Event**
 
-![Post- Authentication Privilege Event][image4]
+![Post- Authentication Privilege Event](Screenshots/04-Post-Authentication-Privilege-Event.png)
 
 **Findings:** At 02:33:02, Event ID 4672 recorded special privileges being assigned to a logon associated with M. Tariq shortly after the successful authentication.
 
