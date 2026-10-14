@@ -190,6 +190,7 @@ Five failed authentication attempts involving S. Aldosari were followed by two f
 
 <br>
 **Figure 2 \- Source Asset Identification**  
+<br>
 ![Source Asset Identification](Screenshots/02-Source-Asset-Identification.png)
 
 **Description:** Asset inventory identifying 10.20.4.15 as WS-042 and listing A. Kamal as the workstation owner.
@@ -212,7 +213,8 @@ M. Tariq’s Account / 10.20.4.15
    ↓  
 Success
 
-**Figure 3 \- Account and Workstation Correlation**![Account and Workstation Correlation](Screenshots/03-Account-and-Workstation-Correlation.png)
+**Figure 3 \- Account and Workstation Correlation**
+![Account and Workstation Correlation](Screenshots/03-Account-and-Workstation-Correlation.png)
 
 **Analyst Observation:** The same source IP address, 10.20.4.15, appeared throughout the failed and successful authentication activity. Figure 2 maps that source to WS-042, A. Kamal’s assigned workstation, while Figure 3 shows that S. Aldosari and M. Tariq are assigned to different workstations. This establishes a cross-account pattern from a single source workstation.
 
