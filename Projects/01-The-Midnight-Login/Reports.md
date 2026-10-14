@@ -91,7 +91,7 @@ Used to track, record, and maintain physical and digital assets.<br>
 
 ## **MITRE ATT\&CK**
 
-Used to research and categorize observed behavior according to established adversary tactics and techniques.<br>
+Used to research and categorize observed behavior according to established adversary tactics and techniques.<br><br>
 
 # **Initial Alert**
 
