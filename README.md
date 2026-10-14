@@ -91,10 +91,10 @@ cybersecurity-portfolio/
 ├── README.md  
 │  
 ├── Projects/  
-│   ├── 01-The-Midnight-Login/ 
-│   ├── 02-One-Account-Three-Attacks/  
-│   ├── 03-The-Phish-That-Got-Through/  
-│   └── 04-The-2-17-AM-Incident/  
+    ├── 01-The-Midnight-Login/ <br>
+    ├── 02-One-Account-Three-Attacks/  
+    ├── 03-The-Phish-That-Got-Through/  
+    └── 04-The-2-17-AM-Incident/  
 │  
 └── Templates/  
     └── project-template.md
