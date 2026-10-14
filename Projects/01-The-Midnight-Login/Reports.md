@@ -69,25 +69,26 @@ This investigation was conducted within a controlled cybersecurity lab environme
 
 **Virtualization Platform:** None
 
-**Network Configuration:** Internal Network
+**Network Configuration:** Internal Network<br>
 
 # **Tools Used**
+<br>
 
 ## **ACTIVE DIRECTORY**
 
-**Purpose:** Provides centralized authentication and authorization to network resources. 
+**Purpose:** Provides centralized authentication and authorization to network resources. <br>
 
 ## **WINDOWS SECURITY**
 
-**Purpose:** Used to examine authentication records and supporting system activity.
+**Purpose:** Used to examine authentication records and supporting system activity.<br>
 
 ## **ASSET INVENTORY**
 
-Used to track, record, and maintain physical and digital assets.
+Used to track, record, and maintain physical and digital assets.<br>
 
 ## **MITRE ATT\&CK**
 
-Used to research and categorize observed behavior according to established adversary tactics and techniques.
+Used to research and categorize observed behavior according to established adversary tactics and techniques.<br>
 
 # **Initial Alert**
 
