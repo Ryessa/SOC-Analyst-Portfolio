@@ -222,7 +222,7 @@ Events occurring after the authentication were reviewed to determine what happen
 
 **Figure 4 \- Post- Authentication Privilege Event**
 
-![][image4]
+![Post- Authentication Privilege Event][image4]
 
 **Findings:** At 02:33:02, Event ID 4672 recorded special privileges being assigned to a logon associated with M. Tariq shortly after the successful authentication.
 
@@ -232,7 +232,7 @@ Events occurring after the authentication were reviewed to determine what happen
 
 **Figure 5 \- Authentication Event Timeline**
 
-![][image5]  
+![Authentication Event Timeline][image5]  
 **Why it matters:** Shows the chronological sequence
 
 **Investigation Indicators**
