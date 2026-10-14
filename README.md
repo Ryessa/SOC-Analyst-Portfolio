@@ -1,5 +1,7 @@
 # **SOC Analyst Portfolio**
 
+**GitHub README**
+
 # **About Me**
 
 Hello\! I am an Information Systems professional transitioning into cybersecurity with a focus on Security Operations Center (SOC) analysis, threat detection, network security, and incident investigation.
@@ -25,33 +27,33 @@ My goal is to develop the technical and analytical skills required to investigat
 
 # **Featured Investigations**
 
-## **[1\. The Midnight Login](Projects/04-The-Midnight-Login/)**
+## **1\. The Midnight Login**
 
-**Status:** 🟢 Completed
+**Status:** In Progress
 
 An authentication-focused investigation examining unusual login activity and the surrounding security evidence. The project focuses on determining whether an authentication event represents legitimate behavior or activity requiring further investigation.
 
 **Focus:** Authentication Analysis • Log Analysis • Anomaly Detection • Account Security • Incident Investigation
 
-## **[2\. One Account, Three Attacks](Projects/02-One-Account-Three-Attacks/)**
+## **2\. One Account, Three Attacks**
 
-**Status:** 🟡In Progress
+**Status:** In Progress
 
 An investigation centered on suspicious activity involving a single user account and multiple attack patterns. The project focuses on correlating security events and distinguishing separate attack behaviors affecting the same identity.
 
 **Focus:** Account Activity Analysis • Event Correlation • Authentication Monitoring • Threat Detection • Incident Investigation
 
-## **[3\. The Phish That Got Through](Projects/03-The-Phish-That-Got-Through/)**
+## **3\. The Phish That Got Through**
 
-**Status:** 🟡In Progress
+**Status:** In Progress
 
 A phishing investigation examining how a suspicious message or related activity can be analyzed from a SOC perspective. The investigation focuses on identifying indicators, reconstructing events, and determining the potential impact of the incident.
 
 **Focus:** Phishing Analysis • Indicators of Compromise • Event Analysis • Incident Triage • Security Documentation
 
-## **[4\. The 2:17 AM Incident](Projects/01-The-2-17-AM-Incident)**
+## **4\. The 2:17 AM Incident**
 
-**Status:** 🟡In Progress
+**Status:** In Progress
 
 A SOC investigation designed to develop practical skills in reviewing security events, analyzing evidence, establishing a timeline, and determining what occurred during suspicious activity.
 
@@ -89,10 +91,16 @@ cybersecurity-portfolio/
 ├── README.md  
 │  
 ├── Projects/  
-│   ├── [01-The-Midnight-Login/](Projects/04-The-Midnight-Login/)  
-│   ├── [02-One-Account-Three-Attacks/](Projects/02-One-Account-Three-Attacks/)  
-│   ├── [03-The-Phish-That-Got-Through](Projects/03-The-Phish-That-Got-Through/)  
-│   └── [04-The-2-17-AM-Incident/](Projects/01-The-2-17-AM-Incident//)  
+│   ├── 01-The-Midnight-Login/
+        ├──Screenshots
+            ├── 01-Authentication-Sequence.png
+            ├── 02-Source-Asset-Identification.png
+            ├── 03-Account-Workstation-Correlation.png
+            ├──04-Post-Authentication-Privilege-Event.png
+            ├──05-Authentication-Event-Timeline.png  
+│   ├── 02-One-Account-Three-Attacks/  
+│   ├── 03-The-Phish-That-Got-Through/  
+│   └── 04-The-2-17-AM-Incident/  
 │  
 └── Templates/  
     └── project-template.md
