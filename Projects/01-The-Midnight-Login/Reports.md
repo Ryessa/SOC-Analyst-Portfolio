@@ -1,6 +1,3 @@
-<h3>Formulating...</h3>
-
-<!--
 <h1>The Midnight Login</h1>
 🟢 Completed<br>
 <br>
