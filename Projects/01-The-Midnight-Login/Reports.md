@@ -149,6 +149,7 @@ At 02:31:11 on Saturday morning, Security.log recorded a failed Logon Type 3 aut
 
 The initial failed authentication was recorded as Logon Type 3, indicating network authentication to SRV-FIN-02 rather than an interactive local logon to the server. Its significance increased when the same source IP was observed attempting authentication with two additional Finance accounts.
 
+<br>
 ## **Step 2 — Establish the Multi-Account Authentication History**
 
 Authentication events involving S. Aldosari, A. Kamal, and M. Tariq were reviewed for the period:
@@ -169,7 +170,7 @@ The successful authentication for M. Tariq originated from the same source IP ad
 
 **Figure 1 \- Multi-Account Authentication Sequence**
 
-![Figure 1 - Authentication Sequence](Screenshots/01-Authentication-Sequence.png)
+![Authentication Sequence](Screenshots/01-Authentication-Sequence.png)
 
 **Analysis:** 
 
