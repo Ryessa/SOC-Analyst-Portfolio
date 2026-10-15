@@ -182,9 +182,9 @@ Authentication activity originating from WS-042 involved three Finance accounts.
 The successful authentication for M. Tariq originated from the same source IP address as the preceding failed attempts involving all three accounts.
 
 <br>
-## **<h2>Step 3 — Investigate the Multi-Account Authentication Sequence</h2>**
+ <h2>##**Step 3 — Investigate the Multi-Account Authentication Sequence**</h2>
 
-**Figure 1 \- Multi-Account Authentication Sequence**
+**Figure 1 - Multi-Account Authentication Sequence**
 
 ![Authentication Sequence](Screenshots/01-Authentication-Sequence.png)
 
@@ -204,7 +204,7 @@ Five failed authentication attempts involving S. Aldosari were followed by two f
 **Previously Observed:** NO
 
 <br>
-**Figure 2 \- Source Asset Identification**  
+**Figure 2 - Source Asset Identification**  
 
 ![Source Asset Identification](Screenshots/02-Source-Asset-Identification.png)
 
