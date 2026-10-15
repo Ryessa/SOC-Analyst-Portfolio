@@ -182,7 +182,7 @@ Authentication activity originating from WS-042 involved three Finance accounts.
 The successful authentication for M. Tariq originated from the same source IP address as the preceding failed attempts involving all three accounts.
 
 <br>
- <h2>##**Step 3 — Investigate the Multi-Account Authentication Sequence**</h2>
+Step 3 — Investigate the Multi-Account Authentication Sequence
 
 **Figure 1 - Multi-Account Authentication Sequence**
 
@@ -193,7 +193,7 @@ The successful authentication for M. Tariq originated from the same source IP ad
 Five failed authentication attempts involving S. Aldosari were followed by two failed attempts involving A. Kamal and two failed attempts involving M. Tariq. M. Tariq then successfully authenticated at 02:31:31. All events originated from 10.20.4.15 and were recorded as Logon Type 3\. The progression across three accounts from the same source is more significant than an isolated failed login and suggests systematic credential use.01-Authentication-Sequence.png
 
 
-## **Step 4 — Investigate the Source**
+##**Step 4 — Investigate the Source**
 
 **Source IP:** 10.20.4.15 
 
