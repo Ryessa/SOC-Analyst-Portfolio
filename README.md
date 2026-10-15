@@ -97,10 +97,10 @@ SOC-Analyst-Portfolio/
     ├── 02-Two-Emails-One-Verdict-Each/  
     │   └── README.md  
     │  
-    ├── 03-One-Account-Three-Attacks/  
+    ├── 03-The-Phish-That-Got-Through/  
     │   └── README.md  
     │  
-    └── 04-The-Phish-That-Got-Through/  
+    └── 04-The-2-17-AM-Incident/  
         └── README.md
 
 Each completed investigation will include documentation describing the objective, scenario, evidence, investigative methodology, analysis, findings, incident timeline, and lessons learned.
