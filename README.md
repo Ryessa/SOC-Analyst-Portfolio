@@ -34,7 +34,7 @@ An authentication-focused investigation examining unusual login activity and the
 
 **Focus:** Authentication Analysis • Log Analysis • Anomaly Detection • Account Security • Incident Investigation
 
-## **2\. One Account, Three Attacks**
+## **2\. Two Emails, One Verdict Each**
 
 **Status:** In Progress
 
@@ -94,7 +94,7 @@ SOC-Analyst-Portfolio/
     ├── [01-The-Midnight-Login/](Projects/01-The-Midnight-Login/Reports.md)  
     │   └── README.md  
     │  
-    ├── 02-The-2-17-AM-Incident/  
+    ├── 02-Two-Emails-One-Verdict-Each/  
     │   └── README.md  
     │  
     ├── 03-One-Account-Three-Attacks/  
