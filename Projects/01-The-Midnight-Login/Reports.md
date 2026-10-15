@@ -193,7 +193,7 @@ The successful authentication for M. Tariq originated from the same source IP ad
 Five failed authentication attempts involving S. Aldosari were followed by two failed attempts involving A. Kamal and two failed attempts involving M. Tariq. M. Tariq then successfully authenticated at 02:31:31. All events originated from 10.20.4.15 and were recorded as Logon Type 3\. The progression across three accounts from the same source is more significant than an isolated failed login and suggests systematic credential use.01-Authentication-Sequence.png
 
 
-##**Step 4 — Investigate the Source**
+<h2>Step 4 — Investigate the Source</h2>
 
 **Source IP:** 10.20.4.15 
 
@@ -204,7 +204,7 @@ Five failed authentication attempts involving S. Aldosari were followed by two f
 **Previously Observed:** NO
 
 <br>
-**Figure 2 - Source Asset Identification**  
+<h2>Figure 2 - Source Asset Identification</h2>
 
 ![Source Asset Identification](Screenshots/02-Source-Asset-Identification.png)
 
