@@ -204,7 +204,7 @@ Five failed authentication attempts involving S. Aldosari were followed by two f
 **Previously Observed:** NO
 
 <br>
-<h2>Figure 2 - Source Asset Identification</h2>
+<b>Figure 2 - Source Asset Identification</b>
 
 ![Source Asset Identification](Screenshots/02-Source-Asset-Identification.png)
 
