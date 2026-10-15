@@ -84,24 +84,24 @@ This investigation was conducted within a controlled cybersecurity lab environme
 
 # **Tools Used**
 
-## **ACTIVE DIRECTORY**
+**ACTIVE DIRECTORY**
 
 **Purpose:** Provides centralized authentication and authorization to network resources. <br>
 
-## **WINDOWS SECURITY**
+**WINDOWS SECURITY**
 
 **Purpose:** Used to examine authentication records and supporting system activity.<br>
 
-## **ASSET INVENTORY**
+**ASSET INVENTORY**
 
 Used to track, record, and maintain physical and digital assets.<br>
 
-## **MITRE ATT\&CK**
+**MITRE ATT\&CK**
 
 Used to research and categorize observed behavior according to established adversary tactics and techniques.<br><br>
 
 
-# **Initial Alert**
+**Initial Alert**
 
 The investigation began after Security.log identified a sequence of authentication events involving multiple Finance accounts:
 
