@@ -1,7 +1,5 @@
  # **Two Emails, One Verdict Each**
 
-**SOC Analyst Investigation Report**
-
 # **Status**
 
 🟢 Completed
