@@ -1,12 +1,4 @@
-# **Two Emails, One Verdict Each**
-
-**SOC Analyst Investigation Report**
-
-# **Status**
-
-Pending
-
-<!-- # **Two Emails, One Verdict Each**
+ # **Two Emails, One Verdict Each**
 
 **SOC Analyst Investigation Report**
 
