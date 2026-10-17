@@ -34,7 +34,7 @@ An authentication-focused investigation examining unusual login activity and the
 
 **Focus:** Authentication Analysis • Log Analysis • Anomaly Detection • Account Security • Incident Investigation
 
-## **2\. Two Emails, One Verdict Each**
+## [**2\. Two Emails, One Verdict Each**](Projects/02-Two-Emails-One-Verdict-Each/Reports.md)
 
 **Status:** 🟡 In Progress
 
