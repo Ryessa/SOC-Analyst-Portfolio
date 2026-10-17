@@ -12,13 +12,13 @@ The investigation focused on sender information, *Reply-To* addresses, domains, 
 
 Based on the evidence reviewed, **Email A was classified as suspicious, while Email B was classified as benign.** The investigation demonstrates how sender information, URL validation, message characteristics, and recipient context can be used to distinguish suspicious emails from legitimate correspondence.
 
-**Initial Assessment:** Suspicious
-
-
+**Initial Assessment:** Suspicious<br>
+<br>
 # **Scenario**
 
 Two users, I. Haddad and O. Nasser, reported suspicious emails within approximately one hour of each other. The messages were submitted for analysis to determine whether they represented phishing activity or legitimate correspondence. Initial observations included a potential lookalive domain and urgency within one of the reported messages.
 
+<br>
 
 # **Investigation Objective**
 
@@ -28,18 +28,20 @@ The objective of this investigation is to determine:
 * Separate a lookalike domain from the real one  
 * Give each email its own verdict \- including a benign one.
 
+<br>
 
 # **Lab Environment**
 
 This investigation was conducted within a controlled cybersecurity lab environment.
 
-
+<br>
 ## **Systems**
 
 **Monitored Endpoint:** Windows
 
 **Analyst System:** Windows
 
+<br>
 
 #  **Tools Used**
 
@@ -47,7 +49,7 @@ This investigation was conducted within a controlled cybersecurity lab environme
 
 **Purpose:** Used to research and categorize observed behavior when sufficient evidence supported a technique mapping.
 
-
+<br>
 # **Evidence Collected**
 
 The following evidence was reviewed during the investigation:
@@ -55,7 +57,7 @@ The following evidence was reviewed during the investigation:
 * User emails from I. Haddad and O. Nasser
 
 Relevant screenshots and artifacts were preserved throughout the investigation.
-
+<br>
 
 # **Investigation**
 
@@ -82,7 +84,7 @@ Relevant screenshots and artifacts were preserved throughout the investigation.
 
 **Analyst Assessment**  
 *Link target* does not match *link text*. The link target (*https\://billing-aurora-dates.example/login)* is the lookalike login page and *From (display)* shows the real portal. The four-hour deadline shows manufactured urgency, a tactic used in social engineering. All of the fields justify an incident. The user made the correct decision in reporting Email A.
-
+<br>
 **Figure 2: Email B — 'Chamber of Commerce newsletter' (Reported by O. Nasser)**  
 
 **![Chamber of Commerce newsletter][Projects/Screenshots/02-Email-B-Chamber-of-Commerce-newsletter.png]**
@@ -124,7 +126,7 @@ The two emails were compared across sender information, URL consistency, attachm
 	**Email A \-** Suspicious 
 
 	**Email B \-** Benign
-
+<br>
 # **Investigation Indicators**
 
 Document relevant artifacts discovered during the investigation.
@@ -137,7 +139,7 @@ Document relevant artifacts discovered during the investigation.
 | **URL** | https\://portal-aurora-dates.example/invoice | Visible link text presented in Email A |
 | **Email Address** | news@trade-weekly.example | Sender and Reply-To address from Email B |
 | **URL** | https\://trade-weekly.example/issue-42 | Matching visible link and destination in Email B |
-
+<br>
 #  **MITRE ATT\&CK Mapping**
 
 The observed behavior was reviewed against the MITRE ATT\&CK framework.
@@ -147,7 +149,7 @@ The observed behavior was reviewed against the MITRE ATT\&CK framework.
 **Technique:** Spearphishing Link  
 **Technique ID:** T1566.002   
 **Observed behavior:**  A malicious email containing a link requires the user to actively click or copy and paste a URL into a browser.
-
+<br>
 # **Findings**
 
 The investigation identified the following:
@@ -159,7 +161,7 @@ The investigation identified the following:
 5. Email B contained consistent sender, Reply-To, and URL information, with recipient subscription history supporting a benign classification
 
 **Key Correlation:** The strongest correlation between Email A and Email B is the link target. Email B showed that both the link display and the link target must match. Email A displays a legitimate domain but the link target provides a different link.
-
+<br>
 # **Analyst Conclusion**
 
 Based on the available evidence, two emails were sent to Aurora’s Triage center. Email A reported by I. Haddad contained a lookalike domain, a malicious link and had an urgency tone that is distinctive to social engineering. Email B reported by O. Nasser contained legitimate domains, no urgency tone, and the recipient subscribed to the URL. 
@@ -171,7 +173,7 @@ The evidence was sufficient to classify the event as suspicious.
 If this event occurred in a production environment, the main recommended steps would be: software configuration and user training. Software configuration uses anti-spoofing and email authentication mechanisms to filter messages. User Training sessions and workshops help employees to investigate suspicious emails and to examine the Sender header before engaging. 
 
 Because this investigation was conducted in a controlled lab environment, the activity was generated for cybersecurity training and analysis.
-
+<br>
 # **Remediation Recommendations**
 
 If comparable activity occurred in a production environment, recommended actions could include:
@@ -181,7 +183,7 @@ If comparable activity occurred in a production environment, recommended actions
 * [Restrict Web-Based Content](https://attack.mitre.org/mitigations/M1021)   
   [User Training](https://attack.mitre.org/mitigations/M1017/)
 * [Software Configuration](https://attack.mitre.org/mitigations/M1054) 
-
+<br>
 # **Lessons Learned**
 
 This investigation strengthened my ability to analyze reported emails by examining sender information, domains, Reply-To addresses, embedded links, link destinations, message tone, and recipient context.
@@ -197,7 +199,7 @@ I also gained practical experience with:
 * Documenting an evidence-based verdict for each reported email
 
 If I repeated this investigation, I would continue using a structured comparison of sender, domain, URL, and contextual evidence before assigning a verdict rather than relying on the appearance or tone of an email alone.
-
+<br>
 # **Final Assessment**
 
 **Incident:** Two Emails, One Verdict Each
