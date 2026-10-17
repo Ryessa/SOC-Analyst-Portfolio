@@ -94,7 +94,7 @@ SOC-Analyst-Portfolio/
     ├── [01-The-Midnight-Login/](Projects/01-The-Midnight-Login/Reports.md)  
     │   └── README.md  
     │  
-    ├── 02-Two-Emails-One-Verdict-Each/  
+    ├── [02-Two-Emails-One-Verdict-Each/](Projects/02-Two-Emails-One-Verdict-Each/Reports.md)  
     │   └── README.md  
     │  
     ├── 03-The-Phish-That-Got-Through/  
