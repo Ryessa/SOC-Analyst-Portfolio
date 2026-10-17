@@ -36,7 +36,7 @@ An authentication-focused investigation examining unusual login activity and the
 
 ## **2\. Two Emails, One Verdict Each**
 
-**Status:** In Progress
+**Status:** 🟡 In Progress
 
 An investigation centered on suspicious activity involving a single user account and multiple attack patterns. The project focuses on correlating security events and distinguishing separate attack behaviors affecting the same identity.
 
@@ -44,7 +44,7 @@ An investigation centered on suspicious activity involving a single user account
 
 ## **3\. The Phish That Got Through**
 
-**Status:** In Progress
+**Status:** 🟡 In Progress
 
 A phishing investigation examining how a suspicious message or related activity can be analyzed from a SOC perspective. The investigation focuses on identifying indicators, reconstructing events, and determining the potential impact of the incident.
 
@@ -52,7 +52,7 @@ A phishing investigation examining how a suspicious message or related activity 
 
 ## **4\. The 2:17 AM Incident**
 
-**Status:** In Progress
+**Status:** 🟡 In Progress
 
 A SOC investigation designed to develop practical skills in reviewing security events, analyzing evidence, establishing a timeline, and determining what occurred during suspicious activity.
 
