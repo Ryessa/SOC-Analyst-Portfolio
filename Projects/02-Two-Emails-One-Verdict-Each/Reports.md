@@ -73,7 +73,7 @@ Relevant screenshots and artifacts were preserved throughout the investigation.
 
 **Fig. 1: Email A \- ‘Unpaid invoice – final notice’ (Reported by I. Haddad)**
 
-![][image1]
+![Email A - ‘Unpaid invoice – final notice](Screenshots/Email A.png)
 
 **Description:** Email from Aurora Billing 
 
@@ -95,7 +95,7 @@ Relevant screenshots and artifacts were preserved throughout the investigation.
 
 **Fig 2: Email B — 'Chamber of Commerce newsletter' (Reported by O. Nasser)**  
 
-**![][image2]**
+**![Email B.png](Screenshots/Email B.png)
 
 **Description:** Email from Riyadh Trade Weekly
 
