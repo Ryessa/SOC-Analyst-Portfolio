@@ -14,9 +14,11 @@ Based on the evidence reviewed, **Email A was classified as suspicious, while Em
 
 **Initial Assessment:** Suspicious
 
+
 # **Scenario**
 
 Two users, I. Haddad and O. Nasser, reported suspicious emails within approximately one hour of each other. The messages were submitted for analysis to determine whether they represented phishing activity or legitimate correspondence. Initial observations included a potential lookalive domain and urgency within one of the reported messages.
+
 
 # **Investigation Objective**
 
@@ -26,9 +28,11 @@ The objective of this investigation is to determine:
 * Separate a lookalike domain from the real one  
 * Give each email its own verdict \- including a benign one.
 
+
 # **Lab Environment**
 
 This investigation was conducted within a controlled cybersecurity lab environment.
+
 
 ## **Systems**
 
@@ -36,11 +40,13 @@ This investigation was conducted within a controlled cybersecurity lab environme
 
 **Analyst System:** Windows
 
+
 #  **Tools Used**
 
 ## **MITRE ATT\&CK**
 
 **Purpose:** Used to research and categorize observed behavior when sufficient evidence supported a technique mapping.
+
 
 # **Evidence Collected**
 
@@ -50,13 +56,14 @@ The following evidence was reviewed during the investigation:
 
 Relevant screenshots and artifacts were preserved throughout the investigation.
 
+
 # **Investigation**
 
 **Email Investigation Module**
 
-**Fig. 1: Email A \- ‘Unpaid invoice – final notice’ (Reported by I. Haddad)**
+**Figure 1: Email A - ‘Unpaid invoice – final notice’ (Reported by I. Haddad)**
 
-![][image1]
+![Unpaid invoice – final notice](Screenshots/Email-A-Unpaid-invoice-final-notice.png)
 
 **Description:** Email from Aurora Billing 
 
@@ -69,16 +76,16 @@ Relevant screenshots and artifacts were preserved throughout the investigation.
 **Indicators Identified:** 
 
 * *From (actual)* and *Reply-To*: *billing@billing-aurora-dates.example*  
-* *Link target*: *https\://billing-aurora-dates.example/login,*   
-* *Link text*: *https\://portal-aurora-dates.example/invoice*  
+* *Link target*: *https\://billing-aurora-dates.example/login*   
+* *Link text*: https\://portal-aurora-dates.example/invoice 
 * Tone: Urgency
 
 **Analyst Assessment**  
 *Link target* does not match *link text*. The link target (*https\://billing-aurora-dates.example/login)* is the lookalike login page and *From (display)* shows the real portal. The four-hour deadline shows manufactured urgency, a tactic used in social engineering. All of the fields justify an incident. The user made the correct decision in reporting Email A.
 
-**Fig 2: Email B — 'Chamber of Commerce newsletter' (Reported by O. Nasser)**  
+**Figure 2: Email B — 'Chamber of Commerce newsletter' (Reported by O. Nasser)**  
 
-**![][image2]**
+**![Chamber of Commerce newsletter][Projects/Screenshots/02-Email-B-Chamber-of-Commerce-newsletter.png]**
 
 **Description:** Email from Riyadh Trade Weekly
 
