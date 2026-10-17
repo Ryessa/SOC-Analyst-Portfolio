@@ -22,7 +22,7 @@ I am currently expanding that foundation through hands-on cybersecurity labs and
 * Network fundamentals  
 * Security documentation and reporting
 
-My goal is to develop the technical and analytical skills required to investigate security events, distinguish normal activity from suspicious behavior, and document findings clearly.
+My goal is to provide my soft skills and experience
 
 # **Featured Investigations**
 
