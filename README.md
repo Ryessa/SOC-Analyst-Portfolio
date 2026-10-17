@@ -22,7 +22,14 @@ I am currently expanding that foundation through hands-on cybersecurity labs and
 * Network fundamentals  
 * Security documentation and reporting
 
-My goal is to provide my soft skills and experience
+# **Goals**
+
+My goal is to transition into a SOC Analyst / Cybersecurity Analyst role where I can combine my Information Systems background, enterprise technology experience, analytical skills, and developing hands-on cybersecurity capabilities.
+
+This repository documents that progression through practical investigations rather than simply listing tools or theoretical knowledge.
+
+*This portfolio is a work in progress. Projects marked "In Progress" represent ongoing investigations and will be updated as the corresponding analysis is completed.*
+
 
 # **Featured Investigations**
 
@@ -105,10 +112,4 @@ SOC-Analyst-Portfolio/
 
 Each completed investigation will include documentation describing the objective, scenario, evidence, investigative methodology, analysis, findings, incident timeline, and lessons learned.
 
-# **Current Goal**
 
-My goal is to transition into a SOC Analyst / Cybersecurity Analyst role where I can combine my Information Systems background, enterprise technology experience, analytical skills, and developing hands-on cybersecurity capabilities.
-
-This repository documents that progression through practical investigations rather than simply listing tools or theoretical knowledge.
-
-*This portfolio is a work in progress. Projects marked "In Progress" represent ongoing investigations and will be updated as the corresponding analysis is completed.*
