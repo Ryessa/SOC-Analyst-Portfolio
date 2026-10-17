@@ -3,25 +3,17 @@ SOC Analyst Investigation Report<br>
 Status
 🟡 In Progress
 
-<!--# **Two Emails, One Verdict Each**
-
-**SOC Analyst Investigation Report**
-
-# **Status**
-
-🟡 In Progress
+<!--
 
 # **Executive Summary**
 
-On 10/01/2026, an authentication event involving \[USERNAME / ACCOUNT\] was identified at approximately \[TIME\].
+On October 1, 2026, two emails reported by **I. Haddad** and **O. Nasser** was reviewed to determine whether each message represented a security threat or legitimate correspondence.
 
-The login originated from \[SOURCE IP / LOCATION / HOST, if known\] and targeted \[SYSTEM / APPLICATION / HOST\].
+The investigation focused on sender information, *Reply-To* addresses, domains, embedded links, link destinations, message tone and available contextual evidence. Email A contained a lookalike sender domain, mismatched link text and destination, and a four-hour deadline that created a sense of urgency. Email B contained consistent sender information, matching link text and destination, and confirmation that the recipient had previously subscribed to the newsletter.
 
-The activity was selected for investigation because \[briefly explain what made the login unusual — time, location, source IP, device, repeated failures, etc.\].
+Based on the evidence reviewed, **Email A was classified as suspicious, while Email B was classified as benign.** The investigation demonstrates how sender information, URL validation, message characteristics, and recipient context can be used to distinguish suspicious emails from legitimate correspondence.
 
-The investigation focused on determining whether the authentication represented legitimate user activity, an authentication anomaly, or potential unauthorized account access.
-
-**Initial Assessment:** \[Benign / Suspicious / Potentially Malicious / Undetermined\]
+**Initial Assessment:** Suspicious
 
 # **Scenario**
 
@@ -31,10 +23,8 @@ A security event was identified involving the account:
 
 **Authentication Time:** UNKNOWN
 
-\[Describe why this event caught your attention.\]
-
 * Two users encounter suspicious emails within an hour of each other  
-* Lookalike domain  
+* Lookalike domains  
 * Urgency
 
 # **Investigation Objective**
@@ -85,56 +75,67 @@ Relevant screenshots and artifacts were preserved throughout the investigation.
 
 ![][image1]
 
-**Sender / Domain Analysis**: The “From (display)” field contains Aurora Billing \<[*billing@aurora-dates.example*](mailto:billing@aurora-dates.example)*\>.* The “From (actual) field displays *billing@billing-aurora-dates.example –* two different email addresses. 
+**Description:** Email from Aurora Billing 
 
-**URL / Attachment Analysis**: The link text contains a subdomain linking to an invoice. The link target’s URL contains a subdomain linking to a login page. These two URLs are not legitimate.
+**Why It Matters:** This evidence displays several different links associated with Aurora Billing.
 
-No attachment was found.
+**Sender / Domain Analysis**: The *From (display)* field contains Aurora Billing \<*billing@aurora-dates.example\>.* The *From (actual)* and *Reply-To* fields displays *billing@billing-aurora-dates.example –* two different email addresses. 
+
+**URL / Attachment Analysis**: The link text contains a subdomain linking to an invoice. The link target’s URL contains a subdomain linking to a login page. These two URLs are not legitimate. There were no attachments.
 
 **Indicators Identified:** 
 
-From (actual) and Reply-To: *billing@billing-aurora-dates.example,* 
+* *From (actual)* and *Reply-To*: *billing@billing-aurora-dates.example*  
+* *Link target*: *https\://billing-aurora-dates.example/login,*   
+* *Link text*: *https\://portal-aurora-dates.example/invoice*  
+* Tone: Urgency
 
-Link target: *https\://billing-aurora-dates.example/login,* 
-
-*Link text: [https\://portal-aurora-dates.example/invoice](https://portal-aurora-dates.example/invoice)*
-
-Tone: Urgency
-
-Analyst Assessment
+**Analyst Assessment**  
+*Link target* does not match *link text*. The link target is the lookalike login page and *From (display)* shows the real portal. The four-hour deadline shows manufactured urgency, a tactic used in social engineering. All of the fields justify an incident. The user made the correct decision in reporting Email A.
 
 **Fig 2: Email B — 'Chamber of Commerce newsletter' (Reported by O. Nasser)**  
 
 **![][image2]**
 
-**Sender / Domain Analysis:** The “From (display)” field is Riyadh Trade Weekly \<[news@trade-weekly.example](mailto:news@trade-weekly.example)\>. The “From (actual) and Reply-To email are the same and match to the subdomain name.
+**Description:** Email from Riyadh Trade Weekly
 
-**URL / Attachment Analysis:** The Link Text and the Link Target have the same URL: [https\://trade-weekly.example/issue-42](https://trade-weekly.example/issue-42).
+**Why It Matters:** This evidence displays the email address and URL link for Riyadh Trade Weekly.
 
-**Indicators Identified**  
-From (actual) and Reply-To: *billing@billing-aurora-dates.example,* 
+**Sender / Domain Analysis:** The *From (display)*, *From (actual),* and *Reply-To* field is from Riyadh Trade Weekly *\<news@trade-weekly.example\>*. 
 
-Link target: *https\://billing-aurora-dates.example/login,* 
+**URL / Attachment Analysis:** The *Link Text* and the *Link Targe*t have the same URL: *https\://trade-weekly.example/issue-42*. There were no attachments.
 
-*Link text: [https\://portal-aurora-dates.example/invoice](https://portal-aurora-dates.example/invoice)*
+ **Indicators Identified:**
 
-Tone: Monotone
+* *From (actual)* and *Reply-To*: *news@trade-weekly.example*  
+* *Link target* and *Link text*: *https\://trade-weekly.example/issue-42*  
+* Tone: Monotone
 
-**Analyst Assessment:** All fields in the email have the same subdomain name: @ trade-weekly.example
+**Analyst Assessment:** 
 
-**\---**
+All fields are consistent. The Sender matches with its respective displays, links and targets match, no urgency tone, and the recipient subscribed to the URL. 
 
 **Cross-Email Comparison**
 
-**Compare the most important evidence from Email A and Email B.**
+Link target displays the actual evidence. The display name is decorative and misleading.
+
+| Evidence | Email A | Email B |
+| ----- | ----- | ----- |
+| **Sender / Domain** | billing@aurora-dates.example  | news@trade-weekly.example  |
+| **URL(s)** | billing@billing-aurora-dates.example https\://portal.aurora-dates.example/invoice https\://billing-aurora-dates.example/login 
+
+ | https\://trade-weekly.example/issue-42  |
+| **Attachment(s)** | **None** | **None** |
+| **Key Indicators** | *Link target* does not match *link text;* the *From (display)* and the *From (actual) mismatch as well* The four-hour deadline  | *From (actual)* and *Reply-To* have matching URLS *Link target* and *Link text* have matching URLs |
+| **Analyst Assessment** | Mismatched fields | All fields are consistent |
 
 **VERDICT SUMMARY**
 
-Verdict: Malicious / Suspicious / Benign
+**Verdict: Malicious / Suspicious / Benign**
 
-	Email \#1 \- Suspicious 
+	**Email A \- Suspicious** 
 
-	Email \#2 \- Benign
+	**Email B \- Benign**
 
 # **Investigation Indicators**
 
@@ -150,38 +151,36 @@ Document relevant artifacts discovered during the investigation.
 
 Not every artifact is necessarily an Indicator of Compromise. Only classify something as an IOC when the evidence supports doing so.
 
-# **MITRE ATT\&CK Mapping**
+#  **MITRE ATT\&CK Mapping**
 
-Only add techniques supported by your investigation.
+The observed behavior was reviewed against the MITRE ATT\&CK framework.
 
-| Tactic | Technique | ID | Evidence |
-| :---- | :---- | :---- | :---- |
-| Initial Access | Spearphishing Link | T1566.002 | \[OBSERVED EVIDENCE\] |
+**Mapping Explanation:** The observed activity is consistent with the use of Spearphishing Link to gain access to victim systems. This mapping describes the observed behavior and does not establish how the credentials were obtained.
 
-**Mapping Explanation:** \[Explain why the observed behavior maps to the selected technique.\]
-
-Do not add MITRE techniques simply to make the project appear more advanced.
+**Technique:** Spearphishing Link  
+**Technique ID:** T1566.002   
+**Observed behavior:**  A malicious email containing a link requires the user to actively click or copy and paste a URL into a browser.
 
 # **Findings**
 
 The investigation identified the following:
 
-1. \[Finding \#1\]  
-2. \[Finding \#2\]  
-3. \[Finding \#3\]  
-4. \[Finding \#4\]
+1. Lookalike domain registered to impersonate the organization Aurora  
+2. Malicious link  
+3. Sense of Urgency  
+4. Mismatching target and display links
 
-**Key Correlation:** \[Explain the strongest correlation between your evidence.\]
+**Key Correlation:** The strongest correlation between Email A and Email B is the link target. Email B showed that both the link display and the link target must match. Email A displays a legitimate domain but the link target provides a different link.
 
 # **Analyst Conclusion**
 
-Based on the available evidence, \[summarize what most likely occurred\].
+Based on the available evidence, two emails were sent to Aurora’s Triage center. Email A reported by I. Haddad contained a lookalike domain, a malicious link and had an urgency tone that is distinctive to social engineering. Email B reported by O. Nasser contained legitimate domains, no urgency tone, and the recipient subscribed to the URL. 
 
-The investigation established that \[summarize the strongest evidence\].
+The investigation established that the sender in Email A is impersonating Aurora by displaying a legitimate subdomain name in the *From (display)* field, but the actual link is malicious. The email has an urgency tone to entice the user to actively click on the link or copy and paste the link into a browser. Email B contains no malicious links or attachments and all fields are consistent.
 
 The evidence was sufficient to classify the event as suspicious.
 
-If this event occurred in a production environment, \[describe appropriate escalation, containment, validation, or additional investigation\].
+If this event occurred in a production environment, the main recommended steps would be: software configuration and user training. Software configuration uses anti-spoofing and email authentication mechanisms to filter messages. User Training sessions and workshops help employees to investigate suspicious emails and to examine the Sender header before engaging. 
 
 Because this investigation was conducted in a controlled lab environment, the activity was generated for cybersecurity training and analysis.
 
@@ -189,18 +188,15 @@ Because this investigation was conducted in a controlled lab environment, the ac
 
 If comparable activity occurred in a production environment, recommended actions could include:
 
-* User Training  
+* [Audit](https://attack.mitre.org/mitigations/M1047)   
 * [Detection Strategy for Spearphishing Links](https://attack.mitre.org/detectionstrategies/DET0107)   
 * [Restrict Web-Based Content](https://attack.mitre.org/mitigations/M1021)   
-* [Software Configuration](https://attack.mitre.org/mitigations/M1054)   
-* [Audit](https://attack.mitre.org/mitigations/M1047)   
-  .
-
-Only include recommendations relevant to your actual findings.
+* User Training  
+* [Software Configuration](https://attack.mitre.org/mitigations/M1054) 
 
 # **Lessons Learned**
 
-This investigation strengthened my understanding of \[SKILL\], \[SKILL\], and \[SKILL\].
+This investigation strengthened my understanding of Email…, Speaphishing link, and \[SKILL\].
 
 The most important lesson from the investigation was: \[Explain what you learned.\]
 
@@ -213,26 +209,6 @@ I also gained practical experience with:
 
 If I repeated this investigation, I would: \[Explain what you would improve or investigate differently.\]
 
-# **Screenshots and Evidence**
-
-## **Figure 1 — Email A \- ‘Unpaid invoice – final notice’ (Reported by I. Haddad)**
-
-**Insert:** \[SCREENSHOT\]
-
-**Description:** \[Explain what the screenshot shows.\]
-
-**Why It Matters:** \[Explain why this evidence is relevant to the investigation.\]
-
-## 
-
-## **Figure 2 — Email B — 'Chamber of Commerce newsletter' (Reported by o.nasser)**  
-
-**Insert:** \[SCREENSHOT\]
-
-**Description:** \[Explain what the screenshot shows.\]
-
-**Why It Matters:** \[Explain why this evidence is relevant to the investigation.\]
-
 # **Final Assessment**
 
 **Incident:** Two Emails, One Verdict Each
@@ -241,21 +217,21 @@ If I repeated this investigation, I would: \[Explain what you would improve or i
 
 **Account:** I. Haddad and O. Nasser
 
-**Source:** \[SOURCE IP/HOST\]
+**Source:** billing@aurora-dates.example and news@trade-weekly.example 
 
-**Destination:** \[TARGET\]
+**Destination:** I. Haddad and O. Nasser’s email accounts
 
-**Classification:** \[CLASSIFICATION\]
+**Classification:** Suspicious
 
-**Severity:** \[LOW / MEDIUM / HIGH / CRITICAL\]
+**Severity:** MEDIUM
 
-**Confidence:** \[LOW / MODERATE / HIGH\]
+**Confidence:**  MODERATE
 
 **MITRE ATT\&CK**: T1566.002 — Spearphishing Link 
 
 **Environment:** Controlled Cybersecurity Lab
 
-**Investigation Status:** \[OPEN / CLOSED / ESCALATED\]
+**Investigation Status:** CLOSED
 
 Answers
 
