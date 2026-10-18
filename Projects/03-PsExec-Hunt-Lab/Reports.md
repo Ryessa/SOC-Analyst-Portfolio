@@ -1,1 +1,335 @@
+<!--
+PsExec Hunt Lab
+SOC Analyst Investigation Report
+Status
+🟡 In Progress
+https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/
+Executive Summary
+On [DATE], an authentication event involving [USERNAME / ACCOUNT] was identified at approximately [TIME].
+The login originated from [SOURCE IP / LOCATION / HOST, if known] and targeted [SYSTEM / APPLICATION / HOST].
+The activity was selected for investigation because [briefly explain what made the login unusual — time, location, source IP, device, repeated failures, etc.].
+The investigation focused on determining whether the authentication represented legitimate user activity, an authentication anomaly, or potential unauthorized account access.
+Initial Assessment: [Benign / Suspicious / Potentially Malicious / Undetermined]
 
+Scenario
+An alert from the Intrusion Detection System (IDS) flagged suspicious lateral movement activity involving PsExec. This indicates potential unauthorized access and movement across the network. As a SOC Analyst, your task is to investigate the provided PCAP file to trace the attacker’s activities. Identify their entry point, the machines targeted, the extent of the breach, and any critical indicators that reveal their tactics and objectives within the compromised environment. 
+
+[Brief description of why the network activity requires
+investigation.]
+
+INVESTIGATION OBJECTIVE
+The objective of this investigation is to determine:
+
+• What network activity occurred
+• Which systems were involved
+• Which protocols and services were used
+• Whether the activity represents legitimate or suspicious behavior
+• Whether additional systems were affected
+• The sequence of relevant network events
+
+
+LAB ENVIRONMENT
+This investigation was conducted within a controlled
+cybersecurity lab environment.
+
+Evidence Source:
+Network Capture / PCAP
+
+Analysis System:
+[YOUR SYSTEM]
+
+Environment:
+Controlled Cybersecurity Lab
+
+
+TOOLS USED
+
+Wireshark
+Purpose: Used to inspect captured network traffic,
+analyze protocols, identify communicating systems,
+and examine packet-level evidence.
+
+[OTHER TOOL]
+Purpose:
+
+
+EVIDENCE COLLECTED
+The following evidence was reviewed during the investigation:
+
+• PCAP/network capture
+• Source and destination IP addresses
+• Protocol activity
+• Network conversations
+• Relevant packet contents
+• [Additional evidence actually examined]
+
+Relevant screenshots and artifacts were preserved
+throughout the investigation.
+Evidence Collected
+The following evidence was reviewed during the investigation:
+☐ Authentication logs
+☐ SIEM alerts
+☐ Successful login events
+☐ Failed login events
+☐ Source IP addresses
+☐ Destination systems
+☐ User/account activity
+☐ Network traffic
+☐ Process activity
+☐ Command-line activity
+☐ PowerShell activity
+☐ Endpoint events
+☐ Other: ______________________
+Relevant screenshots and artifacts were preserved throughout the investigation.
+Investigation
+1 — Initial Traffic Analysis
+
+Observed:
+Capture timeframe: [TIME]
+Source IP(s): [SOURCE IP/HOST]
+Destination IP(s): [DESTINATION]
+Protocols observed: 
+Ports/services:
+Notable traffic:
+
+Analyst Assessment: [Explain what the initial examination of the PCAP revealed  and what warranted further investigation.]
+
+2 — Source and Destination Analysis
+
+Observed:
+Source: [SOURCE IP/HOST]
+Destination: [DESTINATION]
+Communication direction:
+Protocol: 
+Port:
+Frequency:
+
+Analyst Assessment: [Explain the relationship between the communicating systems and why the traffic is relevant.]
+
+3 — Protocol Analysis
+Search for authentication failures preceding the successful login.
+Protocol:
+Observed:
+[Observation]
+[Observation]
+[Observation]
+Relevant Packet(s):
+[Packet/frame numbers]
+
+Analyst Assessment: [Explain what the protocol activity indicates.]
+
+4 — Suspicious Network Activity
+Observed Activity:
+Source: [SOURCE IP/HOST]
+Protocol / Service:
+Timestamp:
+Relevant Packet(s): 
+Evidence: [Describe exactly what was observed.]
+Analyst Assessment: [Explain why the activity is suspicious and what the evidence supports.]
+
+5 — Host / System Correlation
+
+System
+IP Address
+Role
+Relevant Activity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Analyst Assessment: [Explain how the systems are related based on the network evidence.]
+
+6 — Network Event Timeline
+Build the timeline only from evidence you actually collected.
+Time
+Source
+Destination
+Activity
+Evidence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Timeline Assessment: [Explain the sequence of activity and what the progression suggests.]
+
+7 - Indicators Identified
+Type
+Indicator
+Context
+IP Address
+
+
+
+
+Host
+
+
+
+
+Port
+
+
+
+
+Protocol
+
+
+
+
+Account
+
+
+
+
+Network Artifact
+
+
+
+
+
+
+Investigation Indicators
+MITRE ATT&CK Mapping
+
+Tactic
+Technique
+ID
+Evidence
+[TACTIC]
+[TECHNIQUE]
+[ID]
+[OBSERVED EVIDENCE]
+
+Only add techniques supported by your investigation.
+Mapping Explanation: [Explain why the observed behavior maps to the selected technique.]
+Do not add MITRE techniques simply to make the project appear more advanced.
+Findings
+The investigation identified the following:
+[Finding #1]
+[Finding #2]
+[Finding #3]
+[Finding #4]
+Key Correlation: [Explain the strongest correlation between your evidence.]
+Analyst Conclusion
+Based on the available evidence, [summarize what most likely occurred].
+The investigation established that [summarize the strongest evidence].
+[Explain whether the evidence was sufficient to classify the event as legitimate, suspicious, or malicious.]
+If this event occurred in a production environment, [describe appropriate escalation, containment, validation, or additional investigation].
+Because this investigation was conducted in a controlled lab environment, the activity was generated for cybersecurity training and analysis.
+Remediation Recommendations
+If comparable activity occurred in a production environment, recommended actions could include:
+Validate activity with the account owner.
+Reset credentials if compromise is suspected.
+Revoke suspicious sessions.
+Review multifactor authentication.
+Investigate the source IP.
+Review endpoint activity.
+Examine other accounts for similar behavior.
+Escalate confirmed suspicious activity according to incident-response procedures.
+Only include recommendations relevant to your actual findings.
+Lessons Learned
+This investigation strengthened my understanding of [SKILL], [SKILL], and [SKILL].
+The most important lesson from the investigation was: [Explain what you learned.]
+I also gained practical experience with:
+[Skill]
+[Skill]
+[Skill]
+[Skill]
+If I repeated this investigation, I would: [Explain what you would improve or investigate differently.]
+Screenshots and Evidence
+Figure 1 — Initial Alert
+Insert: [SCREENSHOT]
+Description: [Explain what the screenshot shows.]
+Why It Matters: [Explain why this evidence is relevant to the investigation.]
+Figure 2 — Authentication Activity
+Insert: [SCREENSHOT]
+Description: [Explain what the screenshot shows.]
+Why It Matters: [Explain why this evidence is relevant to the investigation.]
+Figure 3 — Event Correlation
+Insert: [SCREENSHOT]
+Description: [Explain what the screenshot shows.]
+Why It Matters: [Explain why this evidence is relevant to the investigation.]
+Figure 4 — Post-Authentication Activity
+Insert: [SCREENSHOT]
+Description: [Explain what the screenshot shows.]
+Why It Matters: [Explain why this evidence is relevant to the investigation.]
+Final Assessment
+Incident: 
+Date / Time: [DATE]
+Source System(s): [SOURCE IP/HOST]
+Source IP:
+Destination System(s): [TARGET]
+Destination IP(s):
+Primary Protocol(s):
+Classification: [CLASSIFICATION]
+MITRE ATT&CK: [TECHNIQUE — ID, if applicable]
+Environment: Controlled Cybersecurity Lab
+Investigation Status: [OPEN / CLOSED / ESCALATED]
+-->
