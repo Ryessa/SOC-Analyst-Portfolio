@@ -1,0 +1,39 @@
+# PsExec Hunt Lab
+# Status: 🟡 In Progress
+<!--# An alert from the Intrusion Detection System (IDS) flagged suspicious lateral movement activity involving PsExec. This indicates potential unauthorized access and movement across the network. As a SOC Analyst, your task is to investigate the provided PCAP file to trace the attacker’s activities. Identify their entry point, the machines targeted, the extent of the breach, and any critical indicators that reveal their tactics and objectives within the compromised environment.-->
+# Focus: Execution • Defense Impairment • Discovery • Lateral Movement • Wireshark
+
+<!--<h3>Objective</h3>
+<li>Choose durable behavioral fields over volatile artifacts.</li>
+<li>Structu re boolean conditions to match the behavior precisely.</li>
+<li>Map the detection to an ATT&CK technique. </li>
+<br>
+<br>
+<h3>Scenario</h3>
+<br>
+<br>
+<h3>Tools Used</h3>
+<br>
+<br>
+<h3>Investigation</h3>
+<br>
+<br>
+<h3>Findings</h3>
+<br>
+<br>
+<h3>Indicators</h3>
+<br>
+<br>
+<h3>MITRE ATT&CK Mapping</h3>
+<br>
+<br>
+<h3>Analyst Conclusion</h3>
+<br>
+<br>
+<h3>Recommended Response</h3>
+<br>
+<br>
+<h3>Screenshots</h3>
+<br>
+<br>
+<h3>Lessons Learned</h3> -->
