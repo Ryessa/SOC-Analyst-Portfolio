@@ -99,20 +99,19 @@ SOC-Analyst-Portfolio/
 └── Projects/  
     │  
     ├── [01-The-Midnight-Login/](Projects/01-The-Midnight-Login/Reports.md)  
-    │   └── README.md  
+    │       └── README.md  
     │  
     ├── [02-Two-Emails-One-Verdict-Each/](Projects/02-Two-Emails-One-Verdict-Each/Reports.md)  
-    │   └── README.md  
+    │       └── README.md  
     │  
     ├── [03-PsExec-Hunt/](Projects/03-PsExec-Hunt)
-    │   └── README.md  
+    │       └── README.md  
     │  
-    │ 
     ├── [04-Beta Gamer/](Projects/04-Beta Gamer)/  
-    │   └── README.md  
+    │       └── README.md  
     │
     ├── [05-The Sentinel-Detection/](Projects/05-The-Sentinel-Detection/Reports.md)
-    │   └── README.md  
+    │       └── README.md  
     │     
 
 Each completed investigation will include documentation describing the objective, scenario, evidence, investigative methodology, analysis, findings, incident timeline, and lessons learned.
