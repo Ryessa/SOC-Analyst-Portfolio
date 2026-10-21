@@ -49,7 +49,7 @@ An investigation centered on suspicious activity involving a single user account
 
 **Focus:** Account Activity Analysis • Event Correlation • Authentication Monitoring • Threat Detection • Incident Investigation
 
-## **3\. The Phish That Got Through**
+## **3\. PsExec Hunt**
 
 **Status:** 🟡 In Progress
 
@@ -57,7 +57,7 @@ A phishing investigation examining how a suspicious message or related activity 
 
 **Focus:** Phishing Analysis • Indicators of Compromise • Event Analysis • Incident Triage • Security Documentation
 
-## **4\. The 2:17 AM Incident**
+## **4\. Beta Gamer**
 
 **Status:** 🟡 In Progress
 
