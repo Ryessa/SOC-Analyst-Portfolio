@@ -1,4 +1,5 @@
-# The 2:17 AM Incident
+# Beta Gamer
 ## Status: 🟡 In Progress
+<!--
 ## Investigation Overview
 
