@@ -104,10 +104,10 @@ SOC-Analyst-Portfolio/
     ├── [02-Two-Emails-One-Verdict-Each/](Projects/02-Two-Emails-One-Verdict-Each/Reports.md)  
     │   └── README.md  
     │  
-    ├── 03-The-Phish-That-Got-Through/  
+    ├── [03-PsExec-Hunt/](Projects/03-PsExec-Hunt)
     │   └── README.md  
     │  
-    └── 04-The-2-17-AM-Incident/  
+    └── [04-Beta Gamer](<Projects/04-Beta Gamer>)/  
         └── README.md
 
 Each completed investigation will include documentation describing the objective, scenario, evidence, investigative methodology, analysis, findings, incident timeline, and lessons learned.
