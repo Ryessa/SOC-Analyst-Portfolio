@@ -49,7 +49,7 @@ An investigation centered on suspicious activity involving a single user account
 
 **Focus:** Account Activity Analysis • Event Correlation • Authentication Monitoring • Threat Detection • Incident Investigation
 
-## **3\. PsExec Hunt**
+## [**3\. PsExec Hunt**](Projects/03-PsExec-Hunt/Reports.md)
 
 **Status:** 🟡 In Progress
 
@@ -57,13 +57,18 @@ A phishing investigation examining how a suspicious message or related activity 
 
 **Focus:** Phishing Analysis • Indicators of Compromise • Event Analysis • Incident Triage • Security Documentation
 
-## **4\. Beta Gamer**
+## [**4\. Beta Gamer**](Projects/04-Beta-Gamer/Reports.md)
 
 **Status:** 🟡 In Progress
 
 A SOC investigation designed to develop practical skills in reviewing security events, analyzing evidence, establishing a timeline, and determining what occurred during suspicious activity.
 
 **Focus:** Alert Investigation • Log Analysis • Timeline Analysis • Incident Investigation • Security Documentation
+
+## [**5\. The Sentinel Detection**](Projects/05-The-Sentinel-Detection/Reports.md)
+
+**Status:** 🟡 In Progress
+
 
 # **Core Tools**
 
@@ -99,19 +104,19 @@ SOC-Analyst-Portfolio/
 └── Projects/  
     │  
     ├── [01-The-Midnight-Login/](Projects/01-The-Midnight-Login/Reports.md)  
-    │       └── README.md  
+    │           └── README.md  
     │  
     ├── [02-Two-Emails-One-Verdict-Each/](Projects/02-Two-Emails-One-Verdict-Each/Reports.md)  
-    │       └── README.md  
+    │           └── README.md  
     │  
     ├── [03-PsExec-Hunt/](Projects/03-PsExec-Hunt/Reports.md)
-    │       └── README.md  
+    │           └── README.md  
     │  
     ├── [04-Beta Gamer/](Projects/04-Beta-Gamer/Reports.md)
-    │       └── README.md  
+    │           └── README.md  
     │
     ├── [05-The Sentinel-Detection/](Projects/05-The-Sentinel-Detection/Reports.md)
-    │       └── README.md  
+    │           └── README.md  
     │     
 
 Each completed investigation will include documentation describing the objective, scenario, evidence, investigative methodology, analysis, findings, incident timeline, and lessons learned.
