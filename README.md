@@ -104,10 +104,10 @@ SOC-Analyst-Portfolio/
     ├── [02-Two-Emails-One-Verdict-Each/](Projects/02-Two-Emails-One-Verdict-Each/Reports.md)  
     │       └── README.md  
     │  
-    ├── [03-PsExec-Hunt/](Projects/03-PsExec-Hunt)
+    ├── [03-PsExec-Hunt/](Projects/03-PsExec-Hunt/Reports.md)
     │       └── README.md  
     │  
-    ├── [04-Beta Gamer/](Projects/04-Beta Gamer)/  
+    ├── [04-Beta Gamer/](Projects/04-Beta-Gamer/Reports.md)
     │       └── README.md  
     │
     ├── [05-The Sentinel-Detection/](Projects/05-The-Sentinel-Detection/Reports.md)
