@@ -107,10 +107,11 @@ SOC-Analyst-Portfolio/
     ├── [03-PsExec-Hunt/](Projects/03-PsExec-Hunt)
     │   └── README.md  
     │  
-    ├── [04-Beta Gamer](Projects/04-Beta Gamer)/  
+    │ 
+    ├── [04-Beta Gamer/](Projects/04-Beta Gamer)/  
     │   └── README.md  
     │
-    ├── [05-The Sentinel-Detection](Projects/05-The-Sentinel-Detection/Reports.md)
+    ├── [05-The Sentinel-Detection/](Projects/05-The-Sentinel-Detection/Reports.md)
     │   └── README.md  
     │     
 
