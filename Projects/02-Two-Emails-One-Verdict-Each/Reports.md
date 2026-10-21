@@ -1,9 +1,9 @@
-<!--
+
 # **Two Emails, One Verdict Each**
 
 # **Status**
 
-🟢 Completed
+🟡 Pending
 
 # **Executive Summary**
 
