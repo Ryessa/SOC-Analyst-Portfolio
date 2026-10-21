@@ -43,7 +43,7 @@ An authentication-focused investigation examining unusual login activity and the
 
 ## [**2\. Two Emails, One Verdict Each**](Projects/02-Two-Emails-One-Verdict-Each/Reports.md)
 
-**Status:** 🟡 In Progress
+**Status:** 🟡 Pending
 
 An investigation centered on suspicious activity involving a single user account and multiple attack patterns. The project focuses on correlating security events and distinguishing separate attack behaviors affecting the same identity.
 
